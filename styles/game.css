@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+
+.container{
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 100%;
+}
+
+#header{
+    background: #eb8e8e;
+    height: 50px;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.setting{
+    width: 40px;
+    height: 40px;
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.counter{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counterCase{
+    height: 38px;
+    width: 180px;
+    background: #E3ACAC;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+}
+
+.worm{
+    width: 43px;
+    margin: -20px 0px -15px 0px;
+}
+
+.yellowEmoji{
+    color: yellow;
+}
