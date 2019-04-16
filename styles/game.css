@@ -15,6 +15,7 @@ body{
 #header{
     background: #eb8e8e;
     height: 50px;
+    position: relative;
 }
 
 nav{
@@ -28,6 +29,61 @@ nav{
 .setting{
     width: 40px;
     height: 40px;
+}
+
+.setting:hover{
+    opacity: 0.7;
+}
+
+.settingButton:hover + .subMenu{ /* le subMenu est en hover en attendant de créer son JS */
+    display: block;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.subMenu{
+    background: #eb8e8e;
+    height: auto;
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    display: none; /* le subMenu est en hover en attendant de créer son JS */
+}
+
+.subMenu img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.subMenuLine{
+    display: flex;
+    flex-direction: row;
+}
+
+.subMenuLine div{
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subMenu button{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.subMenu span{
+    font-weight: lighter;
 }
 
 h1{
