@@ -2,142 +2,145 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 62,5%;
     color: #444;
 }
 
 .container{
-    margin-left: 70px;
-    margin-right: 70px;
-    height: 100%;
+    width : 1500px;
+    margin : 0 auto;
+    height : 100%;
+    display: flex; 
+    flex-direction: row;
 }
 
 #header{
     background: #eb8e8e;
     height: 50px;
-    position: relative;
-}
-
-nav{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.setting{
-    width: 40px;
-    height: 40px;
-}
-
-button:hover{
-    opacity: 0.7;
-}
-
-button{
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.subMenuClose{
-    display: none;
-}
-
-.subMenu{
-    background: #eb8e8e;
-    height: auto;
-    width: 350px;
-    position: absolute;
-    top: 50px;
-    display: block;
-}
-
-.subMenu img{
-    width: 30px;
-    margin-right: 10px;
-}
-
-.subMenuLine{
-    display: flex;
-    flex-direction: row;
-}
-
-.subMenuLine div{
-    width: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-
-.subMenu button{
-    font-size: 25px;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.subMenu span{
-    font-weight: lighter;
-}
-
-.socialMedia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.socialMedia img{
-    width: 20px;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 h1{
-    color: white;
-    font-size: 30px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 5px;
+    font-weight: lighter;
+    color: black;
 }
 
-.counter{
-    width: 380px;
+.flex{
     display: flex;
+    align-content: center;
     justify-content: space-between;
 }
 
-.counterCase{
-    height: 38px;
-    width: 180px;
-    background: #E3ACAC;
-    border-radius: 50px;
+/*Button dynamite*/
+
+.buttonMarket{
+    border: 1px solid #E3ACAC;
+    background-color: #E3ACAC;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    width: 13%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dynamites img{
+    width: 20%;
+}
+
+#more{
+    color: yellow;
+    font-size: 2em;
+}
+
+.buttonHover:hover #more{
+    font-size: 2.5em;
+
+}
+
+.buttonHover:hover{
+    cursor: pointer;
+}
+
+.buttonHover:hover #levelUp{
+    width: 11%;        
+}   
+
+/*Button Boats*/
+
+.boats img{
+    width: 9%;
+}
+
+#setting{
+    height: 95%;
+    width: auto;
+    margin-top: 1px;
+}
+
+.boats p{
+    padding: 
+}
+
+#level{
+    font-weight: bolder;
+}
+
+/*Button worms*/
+
+.worms img{
+    width: 20%;
+}
+
+.worm p{
+    font-weight: bolder;
+}
+
+/*Button coin*/
+
+.coin {
+    justify-content: space-around;
+}
+
+.coin p{
+    margin: 0 10%;
+    font-weight: bolder;
+}
+
+/* 
+BODY
+*/
+
+.subMenuDynamites{
+    background-color: #eb8e8e;
+    width: 10%;
+    height: auto;
+    position: relative; 
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.blocDynamite img{
+    width: 13%;
+    margin: 0;
+}
+
+.blocDynamite p{
+    margin: 5%;
+}
+
+.blocMarket{
+    border: 1px solid #E3ACAC;
+    background-color: #E3ACAC;
+    margin: 5px;
+    border-radius: 20px;
+    width: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 16px;
+    justify-content: space-around;
 }
 
-h2{
-    margin: 0;
-    text-align: center;
-}
-
-.worm{
-    width: 43px;
-    margin: -20px 0px -15px 0px;
-}
-
-.yellowEmoji{
-    color: yellow;
-}
 
 /* 
 BODY

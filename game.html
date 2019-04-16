@@ -10,53 +10,38 @@
 </head>
 <body>
     <header id="header">
-        <div class="container">
-            <nav>
-                <button class="settingButton" href="#" title="settings button">
-                    <img class="setting" src="images/settings.png" alt="settings logo">
-                </button>
-                <div class="subMenuClose">
-                    <div class="subMenuLine">
-                        <div>
-                            <button><img src="images/volume-2.png" alt="sounds button"><span>Sounds</span></button>
-                        </div>
-                        <div>
-                            <button><img src="images/flag.png" alt="languages button"><span>Languages</span></button>
-                        </div>
-                    </div>
-                    <div class="subMenuLine">
-                        <div>
-                            <button><img src="images/music.png" alt="music button"><span>Music</span></button>
-                        </div>
-                        <div>
-                            <button><img src="images/book-open.png" alt="rules button"><span>Rules</span></button>
-                        </div>
-                    </div>
-                    <div class="socialMedia">
-                        <a class="facebookLogo" href="https://www.facebook.com" title="facebook"><img src="images/facebook.png" alt="facebook button"></a>
-                        <a href="https://www.instagram.com" title="instagram"><img src="images/instagram.png" alt="instagram button"></a>
-                        <a href="https://twitter.com/" title="twitter"><img src="images/twitter.png" alt="twitter button"></a>
-                    </div>
-                </div>
-                <h1>
-                    Bubulle
-                </h1>
-                <div class="counter">
-                    <div class="counterCase">
-                        <h2>
-                            <img class="worm" src="images/candy-worm.svg" alt="worm">
-                            <span class="wromNumber">100</span> <span class="yellowEmoji yellowPlus">+</span>
-                        </h2>
-                    </div>
-                    <div class="counterCase">
-                        <h2>
-                            <span class="yellowEmoji">$</span> <span class="moneyNumber">1000</span>
-                        </h2>
-                    </div>
-                </div>
-            </nav>
+        <div class="container flex">
+            <h1>Bubulle</h1>
+            <div class="buttonMarket dynamites buttonHover">
+                <img src="images/dynamite.png" alt="dynamite">
+                <p id="dynamites">2</p>
+                <p id="more">+</p>
+            </div>
+            <div class="buttonMarket boats buttonHover">
+                <p>Boat level</p>
+                <p id="level">1</p>
+                <img id="levelUp" src="images/levelUp.png" alt="levelUp">
+            </div>
+            <div class="worms buttonMarket buttonHover">
+                <img src="images/worm.svg" alt="worm">
+                <p id="numberWorms">100</p>
+                <p id="more">+</p>
+            </div>
+            <div class="coin buttonMarket">
+                <p>1 000</p>
+                <img src="images/coin.png" alt="coin">
+            </div>
+            <img src="images/settings.png" alt="setting" id="setting">
         </div>
     </header>
+    <div class="subMenuDynamites SubMenu">
+            <div class="blocDynamite blocMarket">
+                <img src="images/blocDynamite.svg" alt="dynamite">
+                <p>x 3</p>
+                <p>1 000</p>
+                <img src="images/coin.png" alt="coin">
+            </div>
+    </div>
     <div class="background">
         <img src="images/Island.png" alt="Island" id="island"/>
         <img src="images/Path.png" alt="sea" id="path1">
