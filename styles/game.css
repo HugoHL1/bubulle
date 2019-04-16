@@ -35,10 +35,6 @@ button:hover{
     opacity: 0.7;
 }
 
-.settingButton:hover + .subMenu{ /* le subMenu est en hover en attendant de créer son JS */
-    display: block;
-}
-
 button{
     background: none;
     border: none;
@@ -50,13 +46,17 @@ button:hover{
     cursor: pointer;
 }
 
+.subMenuClose{
+    display: none;
+}
+
 .subMenu{
     background: #eb8e8e;
     height: auto;
     width: 350px;
     position: absolute;
     top: 50px;
-    display: none; /* le subMenu est en hover en attendant de créer son JS */
+    display: block;
 }
 
 .subMenu img{
