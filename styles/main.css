@@ -15,7 +15,7 @@ body{
 }
 
 .firstContainer{
-    height: 530px;
+    height: 60%;
 }
 
 .box{
@@ -84,13 +84,23 @@ h1{
 
 .secondContainer{
     width: 100%;
-    margin: 0 auto;
+    margin: 5% auto;
+    background: #9fe5ff;
+    height: 60%;
+}
+
+.storyTelling{
+    padding: 40px
+}
+
+h1.title2{
+    text-align: center;
+    color: #000000;
 }
 
 .story{
     text-align: center;
-    padding: 90px;
     font-size: 30px;
     margin: 0 auto;
-    background: green;
+    padding:  20px 40px;
 }
