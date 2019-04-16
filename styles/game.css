@@ -31,12 +31,8 @@ nav{
     height: 40px;
 }
 
-.setting:hover{
+button:hover{
     opacity: 0.7;
-}
-
-.settingButton:hover + .subMenu{ /* le subMenu est en hover en attendant de créer son JS */
-    display: block;
 }
 
 button{
@@ -50,13 +46,17 @@ button:hover{
     cursor: pointer;
 }
 
+.subMenuClose{
+    display: none;
+}
+
 .subMenu{
     background: #eb8e8e;
     height: auto;
     width: 350px;
     position: absolute;
     top: 50px;
-    display: none; /* le subMenu est en hover en attendant de créer son JS */
+    display: block;
 }
 
 .subMenu img{
@@ -73,10 +73,11 @@ button:hover{
     width: 50%;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 .subMenu button{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     display: flex;
     align-items: center;
@@ -84,6 +85,17 @@ button:hover{
 
 .subMenu span{
     font-weight: lighter;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia img{
+    width: 20px;
+    margin-top: 20px;
 }
 
 h1{
@@ -125,4 +137,97 @@ h2{
 
 .yellowEmoji{
     color: yellow;
+}
+
+/* 
+BODY
+*/
+
+#island {
+    position : absolute;
+    width : 700px;
+    top : 100px;
+    left : 200px;
+    z-index : -1;
+}
+
+#path1{
+    position : absolute; 
+    top : 710px;
+    height : 581px;
+    z-index : 1;
+    width: 100%;
+}
+
+#path2{
+    position : absolute; 
+    top : 697px;
+    width : 100%;
+}
+
+.gradient{
+    position : absolute;
+    background-image : linear-gradient(#AEE4FF, #071635);
+    height : 9000px;
+    width : 100%;
+    top : 1291px;
+}
+
+.graduation {
+    display: flex;
+    width : 50px;
+    height : 10px;
+    background-color: white; 
+    position : absolute; 
+    border-radius: 5px;
+    z-index : 2;
+    left : -10px;
+}
+
+#g1{
+    top : 750px
+}
+#g2{
+    top : 1500px;
+}
+#g3{
+    top : 2250px;
+}
+#g4{
+    top : 3000px;
+}
+#g5{
+    top : 3750px;
+}
+#g6{
+    top : 4500px;
+}
+#g7{
+    top : 5250px;
+}
+#g8{
+    top : 6000px;
+}
+#g9{
+    top : 6750px;
+}
+#g10{
+    top : 7500px;
+}
+#g11{
+    top : 8250px;
+}
+
+.graduation p{
+    color: white; 
+    position : absolute;
+    left : 60px;
+    top : -20px;
+}
+
+#fisherMan{
+    width : 400px;
+    position : absolute; 
+    top : 445px;
+    left : 1129px;
 }
