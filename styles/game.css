@@ -145,9 +145,10 @@ BODY
 
 #island {
     position : absolute;
-    width : 890px;
-    top : 10px;
-    left : -31px;
+    width : 700px;
+    top : 100px;
+    left : 200px;
+    z-index : -1;
 }
 
 #path1{
