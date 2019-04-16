@@ -1,25 +1,35 @@
-//SubMenu setting
+//SubMenuDynamite
+const settingDynamite = document.querySelector('.dynamites')
+const openSubMenuDynamite = document.querySelector('.subMenuDynamites')
 
-const settingButton = document.querySelector('.settingButton')
-const subMenu = document.querySelector('.subMenuClose')
-
-settingButton.addEventListener(
+settingDynamite.addEventListener(
     'click',
     function(){
-        subMenu.classList.toggle('subMenu')
-        subMenu.classList.toggle('subMenuClose')
+        openSubMenuDynamite.classList.toggle('subMenuDynamitesOpen')
+        openSubMenuDynamite.classList.toggle('subMenuDynamites')
     }
 )
 
-// //menuWorm
+//SubMenuBoat
+const settingBoat = document.querySelector('.boats')
+const openSubMenuBoat = document.querySelector('.subMenuBoats')
 
-// const yellowPlus = document.querySelector('.yellowPlus')
-// const /* nomDeLaDivQuiOuvreLeMenuWorm */ = document.querySelector(/* nomDeSaClass */)
+settingBoat.addEventListener(
+    'click',
+    function(){
+        openSubMenuBoat.classList.toggle('subMenuBoatsOpen')
+        openSubMenuBoat.classList.toggle('subMenuBoats')
+    }
+)
 
-// yellowPlus.addEventListener(
-//     'click',
-//     function(){
-//         subMenu.classList.toggle(/* nom de la class au premier click pour ouvrir */)
-//         subMenu.classList.toggle(/* nom de la class au second click pour fermer */)
-//     }
-// )
+//SubMenuWorm
+const settingWorm = document.querySelector('.worms')
+const openSubMenuWorm = document.querySelector('.subMenuWorms')
+
+settingWorm.addEventListener(
+    'click',
+    function(){
+        openSubMenuWorm.classList.toggle('subMenuWormsOpen')
+        openSubMenuWorm.classList.toggle('subMenuWorms')
+    }
+)

@@ -45,16 +45,20 @@ h1{
     justify-content: space-around;
 }
 
+.dynamites{
+    position: relative;
+}
+
 .dynamites img{
     width: 20%;
 }
 
-#more{
+.more{
     color: yellow;
     font-size: 2em;
 }
 
-.buttonHover:hover #more{
+.buttonHover:hover .more{
     font-size: 2.5em;
 
 }
@@ -69,7 +73,11 @@ h1{
 
 /*Button Boats*/
 
-.boats img{
+.boats{
+    position: relative;
+}
+
+#levelUp{
     width: 9%;
 }
 
@@ -77,10 +85,6 @@ h1{
     height: 95%;
     width: auto;
     margin-top: 1px;
-}
-
-.boats p{
-    padding: 
 }
 
 #level{
@@ -112,16 +116,59 @@ h1{
 BODY
 */
 
-.subMenuDynamites{
+.subMenu{
     background-color: #eb8e8e;
-    width: 10%;
     height: auto;
-    position: relative; 
     padding: 10px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -4;
+    margin-top: 50px;
+}
+
+.subMenuDynamitesOpen{
+    width: 100%;
+    display: block;
+}
+
+.subMenuDynamites{
+    width: 100%;
+    display: none;
+}
+
+.subMenuBoatsOpen{
+    width: 100%;
+    display: block;
+}
+
+.subMenuBoats{
+    width: 100%;
+    display: none;
+}
+
+.subMenuWormsOpen{
+    width: 15%;
+    display: block;
+}
+
+.subMenuWorms{
+    width: 15%;
+    display: none;
 }
 
 .blocDynamite img{
+    width: 13%;
+    margin: 0;
+}
+
+.blocBoat img{
+    width: 13%;
+    margin: 0;
+}
+
+.blocWorm img{
     width: 13%;
     margin: 0;
 }
@@ -135,7 +182,6 @@ BODY
     background-color: #E3ACAC;
     margin: 5px;
     border-radius: 20px;
-    width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -151,7 +197,7 @@ BODY
     width : 700px;
     top : 100px;
     left : 200px;
-    z-index : -1;
+    z-index : -10;
 }
 
 #path1{
