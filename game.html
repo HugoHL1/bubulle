@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bubulle game</title>
+    <title>Bubulle Game</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles/game.css">
@@ -15,7 +15,7 @@
                 <button class="settingButton" href="#" title="settings button">
                     <img class="setting" src="images/settings.png" alt="settings logo">
                 </button>
-                <div class="subMenu">
+                <div class="subMenuClose">
                     <div class="subMenuLine">
                         <div>
                             <button><img src="images/volume-2.png" alt="sounds button"><span>Sounds</span></button>
@@ -33,7 +33,9 @@
                         </div>
                     </div>
                     <div class="socialMedia">
-                        <!-- social link -->
+                        <a class="facebookLogo" href="https://www.facebook.com" title="facebook"><img src="images/facebook.png" alt="facebook button"></a>
+                        <a href="https://www.instagram.com" title="instagram"><img src="images/instagram.png" alt="instagram button"></a>
+                        <a href="https://twitter.com/" title="twitter"><img src="images/twitter.png" alt="twitter button"></a>
                     </div>
                 </div>
                 <h1>
@@ -43,18 +45,36 @@
                     <div class="counterCase">
                         <h2>
                             <img class="worm" src="images/candy-worm.svg" alt="worm">
-                            <span class="wromNumber">100</span> <span class="yellowEmoji">+</span>
+                            <span class="wromNumber">100</span> <span class="yellowEmoji yellowPlus">+</span>
                         </h2>
                     </div>
                     <div class="counterCase">
                         <h2>
-                            <spn class="yellowEmoji">$</spn> <span class="moneyNumber">1000</span>
+                            <span class="yellowEmoji">$</span> <span class="moneyNumber">1000</span>
                         </h2>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+    <div class="background">
+        <img src="images/Island.png" alt="Island" id="island"/>
+        <img src="images/Path.png" alt="sea" id="path1">
+        <img src="images/Path2.png" alt="sea" id="path2">
+        <div class="gradient"></div>
+        <img src="images/FisherMan.png" alt="FisherMan" id="fisherMan">
+        <div class="graduation" id="g1"><p>0m</p></div>
+        <div class="graduation" id="g2"><p>10m</p></div>
+        <div class="graduation" id="g3"><p>20m</p></div>
+        <div class="graduation" id="g4"><p>30m</p></div>
+        <div class="graduation" id="g5"><p>40m</p></div>
+        <div class="graduation" id="g6"><p>50m</p></div>
+        <div class="graduation" id="g7"><p>60m</p></div>
+        <div class="graduation" id="g8"><p>70m</p></div>
+        <div class="graduation" id="g9"><p>80m</p></div>
+        <div class="graduation" id="g10"><p>90m</p></div>
+        <div class="graduation" id="g11"><p>100m</p></div>
+    </div>
     <script src="scripts/game.js"></script>
 </body>
 </html>
