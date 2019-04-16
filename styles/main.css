@@ -69,7 +69,7 @@ h1{
 }
 
 .social{
-    padding: 10px;
+    padding: 15px;
     background: #eb8e8e;
     border-radius: 3px;
     width: 25px;
@@ -82,6 +82,11 @@ h1{
     cursor: pointer;
 }
 
+.btn-social img{
+    padding: 7px 0px;
+    width: 20px;
+}
+
 .secondContainer{
     width: 100%;
     margin: 5% auto;
@@ -90,12 +95,13 @@ h1{
 }
 
 .storyTelling{
-    padding: 40px
+    padding: 40px;
+    color: #FFF;
 }
 
 h1.title2{
     text-align: center;
-    color: #000000;
+    color: #FFF;
 }
 
 .story{
@@ -103,4 +109,26 @@ h1.title2{
     font-size: 30px;
     margin: 0 auto;
     padding:  20px 40px;
+}
+
+.thirdContainer{
+    width: 100%;
+    margin: 5% auto;
+    background: #9fe5ff;
+    height: 60%;
+}
+
+.fonctionnality{
+    padding: 40px;
+    text-align: center;
+}
+
+.fullOpa{
+    color: black;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.noOpa{
+    opacity: 0;
 }
