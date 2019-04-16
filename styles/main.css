@@ -115,7 +115,7 @@ h1.title2{
     width: 100%;
     margin: 5% auto;
     background: #9fe5ff;
-    height: 60%;
+    height: 275px;
 }
 
 .fonctionnality{
@@ -131,4 +131,47 @@ h1.title2{
 
 .noOpa{
     opacity: 0;
+}
+
+.title3{
+    color: #FFF;
+}
+
+.howPlayP{
+    color: #FFF;
+    font-size: 30px;
+}
+
+footer{
+    height: 100px;
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    background: #eb8e8e;
+}
+.footContainer{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footA{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footBtn a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footSocial{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footSocial img{
+    width: 20px;
+    margin: 0 30px;
 }
