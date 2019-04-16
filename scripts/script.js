@@ -26,7 +26,17 @@ function setOpacity()
 {
     document.querySelector('.howPlayP').classList.remove("noOpa")
     howPdiv.classList.add("fullOpa")
-    
-
 }
 
+let i = 0, story
+story = "Dans ce jeu vous incarnerez Michel le pécheur. Votre but, attraper le plus de poisson pour amasser un maximum d’argent ! Attention aux algues, aux déchets, aux bombes et aux espèces protégées ; elles vous infligeront des mallus si vous les touchés. Il y a plusieurs zones différentes suivant la profondeur, plus vous allez loin plus vous avez une chance d’attraper des poissons qui vous rapporte une grosse somme."
+
+function typing(){
+    if(i<story.length){
+        document.querySelector('.story').innerHTML += story.charAt(i)
+        i++
+        setTimeout(typing,20)
+    }
+}
+
+typing()
