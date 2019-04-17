@@ -67,9 +67,6 @@ h1{
     cursor: pointer;
 }
 
-.buttonHover:hover #levelUp{
-    width: 11%;        
-}   
 
 /*Button Boats*/
 
@@ -81,15 +78,32 @@ h1{
     width: 9%;
 }
 
-#setting{
-    height: 95%;
-    width: auto;
-    margin-top: 1px;
-}
+.buttonHover:hover #levelUp{
+    width: 11%;        
+}   
 
 #level{
     font-weight: bolder;
 }
+
+.blocBoat{
+    display: flex;
+    flex-direction: column;
+}
+
+.blocBoat p{
+    margin: 0 10%;
+
+}
+
+.boatCoin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+
 
 /*Button worms*/
 
@@ -99,6 +113,10 @@ h1{
 
 .worm p{
     font-weight: bolder;
+}
+
+.blocWorm{
+    margin-top: 50px;
 }
 
 /*Button coin*/
@@ -112,6 +130,13 @@ h1{
     font-weight: bolder;
 }
 
+
+#setting{
+    height: 95%;
+    width: auto;
+    margin-top: 1px;
+    position: relative;
+}
 /* 
 BODY
 */
@@ -129,6 +154,7 @@ BODY
 }
 
 .subMenuDynamitesOpen{
+    padding-top: 25px;
     width: 100%;
     display: block;
 }
@@ -141,6 +167,7 @@ BODY
 .subMenuBoatsOpen{
     width: 100%;
     display: block;
+    padding-top: 100px;
 }
 
 .subMenuBoats{
@@ -149,6 +176,7 @@ BODY
 }
 
 .subMenuWormsOpen{
+    padding-top: 80px;
     width: 15%;
     display: block;
 }
@@ -156,6 +184,7 @@ BODY
 .subMenuWorms{
     width: 15%;
     display: none;
+    padding-top: 100px;
 }
 
 .blocDynamite img{
@@ -163,9 +192,9 @@ BODY
     margin: 0;
 }
 
-.blocBoat img{
-    width: 13%;
-    margin: 0;
+.blocBoat #fisherBoatImage{
+    width: 100%;
+    padding-top: 50%;
 }
 
 .blocWorm img{
@@ -185,6 +214,69 @@ BODY
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/*Settings*/
+
+.subMenuSettings{
+    width: 20%;
+    height: 25%;
+    display: block;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    right: 3%;
+    top: -20px;
+    padding-top: 2%;
+
+}
+
+.iconesSettings{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rules img{
+    width: 30%;
+}
+
+.icones img{
+    height: 5%;
+    width: 20%;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+}
+
+.icones p{
+    margin-left: 20%;
+}
+
+.settingsLeft{
+    display:flex; 
+    flex-direction: column;
+
+}
+
+.settingsRight{
+    display:flex; 
+    flex-direction: column;
+}
+
+/*socialNetworks*/
+
+.socialNetworks{
+    display: flex;
+    justify-content: center;
+}
+
+.socialNetworks img{
+    width: 9%;
+    height: 60%;
+    margin: 20px;
 }
 
 
