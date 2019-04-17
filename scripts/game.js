@@ -46,6 +46,15 @@ settingButton.addEventListener(
     }
 )
 
+const subMenus = document.querySelectorAll('.subMenu')
+
+for (let i = 0; i < subMenus.length; i++) {
+    subMenus[i].addEventListener('click',
+    function(e){
+        e.stopPropagation()
+    }
+    )
+}
 
 // <<<<<<< HEAD
 // <<<<<<< HEAD
