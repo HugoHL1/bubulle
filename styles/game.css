@@ -253,17 +253,6 @@ BODY
     margin-left: 20%;
 }
 
-.settingsLeft{
-    display:flex; 
-    flex-direction: column;
-
-}
-
-.settingsRight{
-    display:flex; 
-    flex-direction: column;
-}
-
 /*socialNetworks*/
 
 .socialNetworks{
