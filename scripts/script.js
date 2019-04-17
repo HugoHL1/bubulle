@@ -66,11 +66,10 @@ playBtn.addEventListener(
     }
 )
 
-function test(){
-    if(localStorage.getItem('localUsername') != null)
-    console.log('okkkk')
-    let titletest = document.querySelector(".testLocal")
-    titletest.innerHTML = localStorage.getItem('localUsername')
+//function test(){
+  //  if(localStorage.getItem('localUsername') != null)
+    //let titletest = document.querySelector(".testLocal")
+   // titletest.innerHTML = localStorage.getItem('localUsername')
 
-}
-test()
+//}
+//test()
