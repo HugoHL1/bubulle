@@ -22,18 +22,6 @@ settingBoat.addEventListener(
     }
 )
 
-//SubMenuWorm
-const settingWorm = document.querySelector('.worms')
-const openSubMenuWorm = document.querySelector('.subMenuWorms')
-
-settingWorm.addEventListener(
-    'click',
-    function(){
-        openSubMenuWorm.classList.toggle('subMenuWormsOpen')
-        openSubMenuWorm.classList.toggle('subMenuWorms')
-    }
-)
-
 //SubMenuSetting
 const settingButton = document.querySelector('#setting')
 const openSubMenuSetting = document.querySelector('.subMenuSettings')
@@ -46,6 +34,7 @@ settingButton.addEventListener(
     }
 )
 
+//Suppression de la propagation du click
 const subMenus = document.querySelectorAll('.subMenu')
 
 for (let i = 0; i < subMenus.length; i++) {

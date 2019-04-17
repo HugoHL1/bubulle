@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    width : 100%;
+    width : 95%;
     margin : 0 auto;
     height : 100%;
     display: flex; 
@@ -102,22 +102,6 @@ h1{
     flex-direction: row;
     align-items: center;
     margin-bottom: 10%;
-}
-
-
-
-/*Button worms*/
-
-.worms img{
-    width: 20%;
-}
-
-.worm p{
-    font-weight: bolder;
-}
-
-.blocWorm{
-    margin-top: 50px;
 }
 
 /*Button coin*/
