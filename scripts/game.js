@@ -79,7 +79,7 @@ soundsButton.addEventListener(
     }
 )
 
-// //Music
+//Music
 // const $music = document.querySelector('.musicAudio')
 // let isMusicOn = false
 
@@ -513,3 +513,12 @@ function fishFollow(clientX, clientY, element) {
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 // =======
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
+
+
+// Activation de la dynamite
+window.addEventListener('keydown', function (event){
+    if(event.key == "d"){
+        // nom de la function de l'evenement causé par la dynamite
+        console.log('function actived') // voir si la function s'active à l'activation de la touche d
+    }
+})
