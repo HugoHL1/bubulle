@@ -477,7 +477,7 @@ fishArray.forEach(function(element, index)
     element.addEventListener('mousedown', (_event) => {
         if(!fishClicked.includes(element)) {
             fishClicked.push(element)
-            element.classList.remove('.water')
+            element.classList.remove('water')
             
             Coin = fishs[element.getAttribute('data-position')].price
             TCoin = TCoin + Coin
