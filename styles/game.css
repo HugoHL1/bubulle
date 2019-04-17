@@ -160,7 +160,6 @@ BODY
 }
 
 .subMenuDynamites{
-    width: 100%;
     display: none;
 }
 
@@ -171,7 +170,6 @@ BODY
 }
 
 .subMenuBoats{
-    width: 100%;
     display: none;
 }
 
@@ -182,9 +180,7 @@ BODY
 }
 
 .subMenuWorms{
-    width: 15%;
     display: none;
-    padding-top: 100px;
 }
 
 .blocDynamite img{
@@ -218,8 +214,7 @@ BODY
 
 /*Settings*/
 
-.subMenuSettings{
-    width: 20%;
+.subMenuSettingsOpen{
     height: 25%;
     display: block;
     color: white;
@@ -228,7 +223,10 @@ BODY
     right: 3%;
     top: -20px;
     padding-top: 2%;
+}
 
+.subMenuSettings{
+    display: none;
 }
 
 .iconesSettings{
@@ -274,11 +272,15 @@ BODY
 }
 
 .socialNetworks img{
-    width: 9%;
-    height: 60%;
+    height: 30px;
+    width: 30px;
     margin: 20px;
 }
 
+.socialNetworks a{
+    height: auto;
+    margin: auto;
+}
 
 /* 
 BODY
@@ -376,7 +378,7 @@ BODY
 
 
 /* anime */
-.saumon{
+.water{
     width: 500px;
     z-index: -100;
 }
@@ -453,5 +455,10 @@ BODY
 
 
 .background{
+    position: relative;
     cursor: url("https://s3-eu-west-1.amazonaws.com/sc-files.pjms.fr/p/pjms/823/000/097/160/7e637f9bc3134f3d8b344ca1bb8ca1d1.png")0 -17,auto;
+}
+
+.backgroundAnim{
+    position: absolute;
 }
