@@ -419,6 +419,7 @@ BODY
 .water{
 	animation: test1 15s infinite;
 }
+
 @keyframes test1 {
     0% {
         transform: translateX(110%);
@@ -428,7 +429,9 @@ BODY
     }
 }
 
-
+.fixed{
+    position: fixed;
+}
 
 .background{
     position: relative;

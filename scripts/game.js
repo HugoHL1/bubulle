@@ -459,9 +459,10 @@ const fishClicked = []
 
 fishArray.forEach(function(element, index)
 {
-    element.addEventListener('click', (_event) => {
+    element.addEventListener('mousedown', (_event) => {
         if(!fishClicked.includes(element)) {
             fishClicked.push(element)
+            element.classList.remove('.water')
         }
         else {
             console.log('fish in array')
@@ -477,11 +478,14 @@ function fishFollow(clientX, clientY, element) {
     let fishX = clientX - element.width / 2
     let fishY = clientY - element.height / 2
     element.classList.remove('fish1', "fish")
-    element.style.zIndex = '-100px'
+    element.style.zIndex = '3'
 
-    element.style.position = 'absolute'
+    element.style.position = 'fixed'
     element.style.left = fishX + "px"
     element.style.top = fishY + "px"
+
+    console.log('test');
+    
 }
 
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
