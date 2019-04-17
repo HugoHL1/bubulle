@@ -55,15 +55,47 @@ function addUsername(){
     }
 }
 
+//Sounds
+const soundsButton = document.querySelector('.sounds')
+const soundsAudio = document.querySelectorAll('.soundsAudio')
+const OffOn1 = document.querySelector('.soundsOffOn')
+let switch1 = false
+
+soundsButton.addEventListener(
+    'click',
+    function(){
+        if(switch1 == false){
+            for (let i = 0; i < soundsAudio.length; i++) {
+                soundsAudio[i].removeAttribute('muted')
+                OffOn1.innerHTML = 'On'
+            }
+        }else{
+            for (let i = 0; i < soundsAudio.length; i++) {
+                soundsAudio[i].setAttribute('muted', '')
+                OffOn1.innerHTML = 'Off'
+            }
+        }
+        switch1 = !switch1
+    }
+)
+
 //Music
-const musicButton = document.querySelector('.sounds')
+const musicButton = document.querySelector('.music')
 const musicAudio = document.querySelector('.musicAudio')
+const OffOn2 = document.querySelector('.musicOffOn')
+let switch2 = false
 
 musicButton.addEventListener(
     'click',
     function(){
-        musicAudio.removeAttribute('muted')
-        musicAudio.setAttribute('muted')
+        if(switch2 == false){
+            musicAudio.removeAttribute('muted')
+            OffOn2.innerHTML = 'On'
+        }else{
+            musicAudio.setAttribute('muted', '')
+            OffOn2.innerHTML = 'Off'
+        }
+        switch2 = !switch2
     }
 )
 
