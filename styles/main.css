@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:  'Josefin Sans', sans-serif;
+   /*background: #9fe5ff;*/
 }
 
 .container{
@@ -10,7 +11,7 @@ body{
     padding: 0;
     position: absolute;
     background-image: url("../images/fond.png") ;
-    background-size: contain;
+    background-size: 110%;
     background-repeat: no-repeat;
 }
 
