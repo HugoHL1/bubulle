@@ -27,7 +27,7 @@ function playText()
     }
     
     let i = 0, story
-    story = "Dans ce jeu vous incarnerez Michel le pécheur. Votre but, attraper le plus de poisson pour amasser un maximum d’argent ! <br> Attention aux algues, aux déchets, aux bombes et aux espèces protégées ; elles vous infligeront des mallus si vous les touchez.<br> Il y a plusieurs zones différentes suivant la profondeur, plus vous allez loin plus vous avez une chance d’attraper des poissons qui vous rapportent une grosse somme."
+    story = "Dans ce jeu vous incarnerez Michel le pécheur. Votre but, attraper le plus de poisson pour amasser un maximum d’argent ! \r<br> Attention aux algues, aux déchets, aux bombes et aux espèces protégées ; elles vous infligeront des mallus si vous les touchez.<br> Il y a plusieurs zones différentes suivant la profondeur, plus vous allez loin plus vous avez une chance d’attraper des poissons qui vous rapportent une grosse somme."
     
     function typing(){
         if(i<story.length){
@@ -54,3 +54,23 @@ function scrollRules(){
 }
 
 window.addEventListener('scroll', scrollRules)
+
+const playBtn = document.querySelector(".submit")
+const form = document.querySelector('form')
+let inputUsername = document.querySelector(".nick")
+
+playBtn.addEventListener(
+    'click',
+    function(){
+        localStorage.setItem('localUsername', inputUsername.value )
+    }
+)
+
+function test(){
+    if(localStorage.getItem('localUsername') != null)
+    console.log('okkkk')
+    let titletest = document.querySelector(".testLocal")
+    titletest.innerHTML = localStorage.getItem('localUsername')
+
+}
+test()
