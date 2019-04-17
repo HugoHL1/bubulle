@@ -372,3 +372,86 @@ BODY
     top : 445px;
     left : 1129px;
 }
+
+
+
+/* anime */
+.saumon{
+    width: 500px;
+    z-index: -100;
+}
+
+.fish
+{
+    animation: test 15s infinite;
+}
+
+
+@keyframes test {
+    0% {
+        transform: scale(1, 1);
+    }
+    7% {
+        transform: scale(1, 0.9) 
+    }
+    14% {
+        transform: scale(1, 1) 
+    }
+    21% {
+        transform: scale(1, 0.9) 
+    }
+    28% {
+        transform: scale(1, 0.9) 
+    }
+    35% {
+        transform: scale(1, 1) 
+    }
+    43% {
+        transform: scale(1, 0.9) 
+    }
+    50% {
+        transform: scale(1, 0.9) 
+    }
+    57% {
+        transform: scale(1, 1) 
+    }
+    64% {
+        transform: scale(1, 0.9) 
+    }
+    71% {
+        transform: scale(1, 0.9) 
+    }
+    78% {
+        transform: scale(1, 1) 
+    }
+    85% {
+        transform: scale(1, 0.9) 
+    }
+    93% {
+        transform: scale(1, 0.9) 
+    }
+    98% {
+        transform: scale(1, 0.90) 
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+/*
+.fish1{
+	animation: test1 15s infinite;
+}
+@keyframes test1 {
+    0% {
+        transform: translateX(110%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+*/
+
+
+.background{
+    cursor: url("https://s3-eu-west-1.amazonaws.com/sc-files.pjms.fr/p/pjms/823/000/097/160/7e637f9bc3134f3d8b344ca1bb8ca1d1.png")0 -17,auto;
+}
