@@ -204,7 +204,7 @@ footer{
 .gradient{
     position : absolute;
     background-image : linear-gradient(#AEE4FF, #071635);
-    height : 100%;
+    height : 65%;
     width : 100%;
     top : 1291px;
 }
