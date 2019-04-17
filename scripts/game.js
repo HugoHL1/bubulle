@@ -103,20 +103,136 @@ musicButton.addEventListener(
 // <<<<<<< HEAD
 // //GAME MECA/////////////////////////////
 
-window.onscroll = function() {myFunction()};
- 
+let fishType1 = document.querySelectorAll('.type1')
+let fishType2 = document.querySelectorAll('.type2')
+let fishType3 = document.querySelectorAll('.type3')
+let fishType4 = document.querySelectorAll('.type4')
+let fishType5 = document.querySelectorAll('.type5')
+let fishType6 = document.querySelectorAll('.type6')
+let fishType100 = document.querySelectorAll('.type100')
+
+let deep0 = 790,
+    deep2 = 2290,
+    deep4 = 3790,
+    deep6 = 5290,
+    deep8 = 6790,
+    deep10 = 8290
+
+
+window.onscroll = function() {myFunction()}     //Fonction pour connaitre la position du scroll 
+
+
+for(let i = 0; i < fishType1.length ; i++){
+    let posFishType1Y = Math.floor(Math.random()*(deep2-deep0)+deep0)
+    console.log(posFishType1Y)
+    fishType1[i].style.top = posFishType1Y + 'px'
+    if (fishType1[i].classList.contains('right')){
+        fishType1[i].style.right = -20 + '%'
+    }else if(fishType1[i].classList.contains('left')){
+        fishType1[i].style.left = -10 + '%'
+    }
+}
+
+for(let j = 0; j< fishType2.length ; j++){
+
+    let posFishType2Y = Math.floor(Math.random()*(deep4-deep0)+deep0)
+    console.log(posFishType2Y)
+    fishType2[j].style.top = posFishType2Y + 'px'
+    if (fishType2[j].classList.contains('right')){
+        fishType2[j].style.right = -20 + '%'
+    }else if(fishType2[j].classList.contains('left')){
+        fishType2[j].style.left = -10 + '%'
+    }
+}
+
+for(let k = 0; k < fishType3.length ; k++){
+
+    let posFishType3Y = Math.floor(Math.random()*(deep6-deep2)+deep2)
+    console.log(posFishType3Y)
+    fishType3[k].style.top = posFishType3Y + 'px'
+    if (fishType3[k].classList.contains('right')){
+        fishType3[k].style.right = -20 + '%'
+    }else if(fishType3[k].classList.contains('left')){
+        fishType3[k].style.left = -10 + '%'
+    }
+}
+
+for(let l = 0; l< fishType4.length ; l++){
+
+    let posFishType4Y = Math.floor(Math.random()*(deep8-deep4)+deep4)
+    console.log(posFishType4Y)
+    fishType4[l].style.top = posFishType4Y + 'px'
+    if (fishType4[l].classList.contains('right')){
+        fishType4[l].style.right = -20 + '%'
+    }else if(fishType4[l].classList.contains('left')){
+        fishType4[l].style.left = -10 + '%'
+    }
+}
+
+for(let m = 0; m< fishType5.length ; m++){
+
+    let posFishType5Y = Math.floor(Math.random()*(deep10-deep6)+deep6)
+    console.log(posFishType5Y)
+    fishType5[m].style.top = posFishType5Y + 'px'
+    if (fishType5[m].classList.contains('right')){
+        fishType5[m].style.right = -20 + '%'
+    }else if(fishType5[m].classList.contains('left')){
+        fishType5[m].style.left = -10 + '%'
+    }
+}
+
+for(let n = 0; n< fishType6.length ; n++){
+
+    let posFishType6Y = Math.floor(Math.random()*(deep10-deep8)+deep8)
+    console.log(posFishType6Y)
+    fishType6[n].style.top = posFishType6Y + 'px'
+    if (fishType6[n].classList.contains('right')){
+        fishType6[n].style.right = -20 + '%'
+    }else if(fishType6[n].classList.contains('left')){
+        fishType6[n].style.left = -10 + '%'
+    }
+}
+
+for(let o = 0; o< fishType100.length ; o++){
+
+    let posFishType100Y = Math.floor(Math.random()*(deep10-deep0)+deep0)
+    console.log(posFishType100Y)
+    fishType100[o].style.top = posFishType100Y + 'px'
+    if (fishType100[o].classList.contains('right')){
+        fishType100[o].style.right = -20 + '%'
+    }else if(fishType100[o].classList.contains('left')){
+        fishType100[o].style.left = -10 + '%'
+    }
+}
+
+
 function myFunction() {
-var x = document.documentElement.scrollTop
-console.log(x)
-if (x > 2250) 
-{
-console.log("youhou");
-}
-else
-{
-console.log("Oh")
-}
- 
+    var x = document.documentElement.scrollTop
+    //console.log(x)
+    if (x >= 790 && x < 2290){
+        //Faire spawn des poissons de type 1 et 2 
+        for(let i = 0; i<= fishType1.length ; i++){
+            posFishY = Math.floor(Math.random()*(2290-790)+790)
+            console.log('La position du poisson '+fishType1+' est '+posFishY)
+        }
+        
+        console.log("Poisson de type 1 et 2")
+    }
+    else if(x >= 2290 && x < 3790){
+        // Faire spawn des poissons de type 2 et 3
+        console.log("Poisson de type 2 et 3")
+    }else if (x >= 3790 && x < 5290){
+        // Faire spawn des poissons de type 3 et 4
+        console.log("Poisson de type 3 et 4")
+    }else if (x >= 5290 && x < 6790){
+        // Faire spawn des poissons de type 4 et 5
+        console.log("Poisson de type 4 et 5")
+    }else if (x >= 6790 && x < 8290){
+        // Faire spawn des poissons de type 5 et 6
+        console.log("Poisson de type 5 et 6")
+    }else{
+        console.log("No fish area")
+    } 
 }
 
 class fish {
@@ -162,6 +278,7 @@ let specie21 = new fish('algea', 'type100', 3000, 0, 'right')
 let specie22 = new fish('garbage', 'type100', 3000, 0, 'left')
 let specie23 = new fish('garbage', 'type100', 3000, 0, 'right')
 let specie24 = new fish('garbage', 'type100', 3000, 0, 'left')
+
 
 
 // // generer avec class
@@ -336,36 +453,36 @@ let specie24 = new fish('garbage', 'type100', 3000, 0, 'left')
 // // // }
 
 // // // mouse click
-// // const fishArray = document.querySelectorAll('.fish')
-// // const fishClicked = []
+const fishArray = document.querySelectorAll('.fish')
+const fishClicked = []
 
 
-// // fishArray.forEach(function(element, index)
-// // {
-// //     element.addEventListener('click', (_event) => {
-// //         if(!fishClicked.includes(element)) {
-// //             fishClicked.push(element)
-// //         }
-// //         else {
-// //             console.log('fish in array')
-// //         }
-// //         fishFollow(_event.clientX, _event.clientY, element)
-// //         document.addEventListener('mousemove', _event => {
-// //             fishFollow(_event.clientX, _event.clientY, element)
-// //         })
-// //     })
-// // })
+fishArray.forEach(function(element, index)
+{
+    element.addEventListener('click', (_event) => {
+        if(!fishClicked.includes(element)) {
+            fishClicked.push(element)
+        }
+        else {
+            console.log('fish in array')
+        }
+        fishFollow(_event.clientX, _event.clientY, element)
+        document.addEventListener('mousemove', _event => {
+            fishFollow(_event.clientX, _event.clientY, element)
+        })
+    })
+})
 
-// // function fishFollow(clientX, clientY, element) {
-// //     let fishX = clientX - element.width / 2
-// //     let fishY = clientY - element.height / 2
-// //     element.classList.remove('fish1', "fish")
-// //     element.style.zIndex = '-100px'
+function fishFollow(clientX, clientY, element) {
+    let fishX = clientX - element.width / 2
+    let fishY = clientY - element.height / 2
+    element.classList.remove('fish1', "fish")
+    element.style.zIndex = '-100px'
 
-// //     element.style.position = 'absolute'
-// //     element.style.left = fishX + "px"
-// //     element.style.top = fishY + "px"
-// // }
+    element.style.position = 'absolute'
+    element.style.left = fishX + "px"
+    element.style.top = fishY + "px"
+}
 
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 

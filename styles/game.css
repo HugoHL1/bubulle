@@ -355,14 +355,13 @@ BODY
 
 
 /* anime */
-.water{
-    width: 500px;
-    z-index: -100;
-}
-
 .fish
 {
     animation: test 15s infinite;
+    transition : left 5s linear;
+    position: absolute;
+    z-index: 11;
+    width: 50%;
 }
 
 
@@ -416,8 +415,8 @@ BODY
         transform: scale(1, 1);
     }
 }
-/*
-.fish1{
+
+.water{
 	animation: test1 15s infinite;
 }
 @keyframes test1 {
@@ -428,7 +427,7 @@ BODY
         transform: translateX(-10%);
     }
 }
-*/
+
 
 
 .background{
@@ -437,5 +436,5 @@ BODY
 }
 
 .backgroundAnim{
-    position: absolute;
+    position: relative;
 }
