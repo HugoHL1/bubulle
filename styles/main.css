@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:  'Josefin Sans', sans-serif;
-   background: #9fe5ff;
+    /*background: #9fe5ff;*/
 }
 
 .container{
@@ -10,9 +10,9 @@ body{
     margin: 0 auto;
     padding: 0;
     position: absolute;
-    background-image: url("../images/fond.png") ;
+    /*background-image: url("../images/fond.png") ;
     background-size: 110%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .firstContainer{
@@ -175,4 +175,78 @@ footer{
 .footSocial img{
     width: 20px;
     margin: 0 30px;
+}
+
+
+/*BACROUND*/
+
+#island {
+    position : absolute;
+    width : 700px;
+    top : 100px;
+    z-index : -10;
+}
+
+#path1{
+    position : absolute; 
+    top : 710px;
+    height : 581px;
+    z-index : 1;
+    width: 100%;
+}
+
+#path2{
+    position : absolute; 
+    top : 697px;
+    width : 100%;
+}
+
+.gradient{
+    position : absolute;
+    background-image : linear-gradient(#AEE4FF, #071635);
+    height : 100%;
+    width : 100%;
+    top : 1291px;
+}
+
+.graduation {
+    display: flex;
+    width : 50px;
+    height : 10px;
+    background-color: white; 
+    position : absolute; 
+    border-radius: 5px;
+    z-index : 2;
+    left : -10px;
+}
+
+#g1{
+    top : 750px
+}
+#g2{
+    top : 1500px;
+}
+
+
+.graduation p{
+    color: white; 
+    position : absolute;
+    left : 60px;
+    top : -20px;
+}
+
+#fisherMan{
+    width : 400px;
+    position : absolute; 
+    top : 445px;
+    left : 70%;
+}
+
+.background{
+    z-index: 1;
+    width: 100%;
+}
+
+.container{
+    z-index: 10;
 }
