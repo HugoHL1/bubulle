@@ -446,6 +446,15 @@ BODY
 
 #f1{
     width: 200px;
+    animation: animf1 14s infinite;
+}
+@keyframes animf1 {
+    0% {
+        transform: translateX(110%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
 }
 #f2{
     width: 200px;
