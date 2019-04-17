@@ -132,7 +132,7 @@ let deep0 = 790,
     deep10 = 8290
 
 
-window.onscroll = function() {myFunction()}     //Fonction pour connaitre la position du scroll 
+//window.onscroll = function() {myFunction()}     //Fonction pour connaitre la position du scroll 
 
 
 for(let i = 0; i < fishType1.length ; i++){
@@ -219,43 +219,44 @@ for(let o = 0; o< fishType100.length ; o++){
 }
 
 
-function myFunction() {
-    var x = document.documentElement.scrollTop
-    //console.log(x)
-    if (x >= 790 && x < 2290){
-        //Faire spawn des poissons de type 1 et 2 
-        for(let i = 0; i<= fishType1.length ; i++){
-            posFishY = Math.floor(Math.random()*(2290-790)+790)
-            console.log('La position du poisson '+fishType1+' est '+posFishY)
-        }
+// function myFunction() {
+//     var x = document.documentElement.scrollTop
+//     //console.log(x)
+//     if (x >= 790 && x < 2290){
+//         //Faire spawn des poissons de type 1 et 2 
+//         for(let i = 0; i<= fishType1.length ; i++){
+//             posFishY = Math.floor(Math.random()*(2290-790)+790)
+//             console.log('La position du poisson '+fishType1+' est '+posFishY)
+//         }
         
-        console.log("Poisson de type 1 et 2")
-    }
-    else if(x >= 2290 && x < 3790){
-        // Faire spawn des poissons de type 2 et 3
-        console.log("Poisson de type 2 et 3")
-    }else if (x >= 3790 && x < 5290){
-        // Faire spawn des poissons de type 3 et 4
-        console.log("Poisson de type 3 et 4")
-    }else if (x >= 5290 && x < 6790){
-        // Faire spawn des poissons de type 4 et 5
-        console.log("Poisson de type 4 et 5")
-    }else if (x >= 6790 && x < 8290){
-        // Faire spawn des poissons de type 5 et 6
-        console.log("Poisson de type 5 et 6")
-    }else{
-        console.log("No fish area")
-    } 
-}
+//         console.log("Poisson de type 1 et 2")
+//     }
+//     else if(x >= 2290 && x < 3790){
+//         // Faire spawn des poissons de type 2 et 3
+//         console.log("Poisson de type 2 et 3")
+//     }else if (x >= 3790 && x < 5290){
+//         // Faire spawn des poissons de type 3 et 4
+//         console.log("Poisson de type 3 et 4")
+//     }else if (x >= 5290 && x < 6790){
+//         // Faire spawn des poissons de type 4 et 5
+//         console.log("Poisson de type 4 et 5")
+//     }else if (x >= 6790 && x < 8290){
+//         // Faire spawn des poissons de type 5 et 6
+//         console.log("Poisson de type 5 et 6")
+//     }else{
+//         console.log("No fish area")
+//     } 
+// }
 
 class fish {
-    constructor(id, type, speed, price, direction)
+    constructor(id, type, speed, price, direction, data)
     {
         this.id = id
         this.type = type
         this.speed = speed
         this.price = price
         this.direction = direction
+        this.data = data
         this.posX = 10
         this.posY = 20
     }  
@@ -266,32 +267,33 @@ class fish {
         
     }
 //}
-
-let specie1 = new fish('fish', 'type1', 3000, 8, 'right')
-let specie2 = new fish('fish', 'type1', 3000, 10, 'right')
-let specie3 = new fish('fish', 'type1', 3000, 15, 'left')
-let specie4 = new fish('fish', 'type1', 3000, 20, 'left')
-let specie5 = new fish('fish', 'type2', 3000, 25, 'right')
-let specie6 = new fish('fish', 'type2', 3000, 30, 'right')
-let specie7 = new fish('whale', 'type100', 3000, -180, 'right')
-let specie8 = new fish('fish', 'type3', 3000, 20, 'right')
-let specie9 = new fish('fish', 'type3', 3000, 28, 'right')
-let specie10 = new fish('shark', 'type100', 3000, -40, 'right')
-let specie11 = new fish('fish', 'type4', 3000, 34, 'left')
-let specie12 = new fish('fish', 'type4', 3000, 40, 'left')
-let specie13 = new fish('fish', 'type4', 3000, 45, 'right')
-let specie14 = new fish('fish', 'type5', 3000, 52, 'right')
-let specie15 = new fish('fish', 'type5', 3000, 58, 'right')
-let specie16 = new fish('fish', 'type5', 3000, 64, 'left')
-let specie17 = new fish('fish', 'type6', 3000, 70, 'right')
-let specie18 = new fish('fish', 'type6', 3000, 72, 'left')
-let specie19 = new fish('goldFish', 'type100', 3000, 150, 'right')
-let specie20 = new fish('turtle', 'type100', 3000, -180, 'right')
-let specie21 = new fish('algea', 'type100', 3000, 0, 'right')
-let specie22 = new fish('garbage', 'type100', 3000, 0, 'left')
-let specie23 = new fish('garbage', 'type100', 3000, 0, 'right')
-let specie24 = new fish('garbage', 'type100', 3000, 0, 'left')
-
+let fishs = 
+[
+    new fish('fish', 'type1', 3000, 8, 'right', 0),
+    new fish('fish', 'type1', 3000, 10, 'right', 1),
+    new fish('fish', 'type1', 3000, 15, 'left', 2),
+    new fish('fish', 'type1', 3000, 20, 'left', 3),
+    new fish('fish', 'type2', 3000, 25, 'right', 4),
+    new fish('fish', 'type2', 3000, 30, 'right', 5),
+    new fish('whale', 'type100', 3000, -180, 'right', 6),
+    new fish('fish', 'type3', 3000, 20, 'right', 7),
+    new fish('fish', 'type3', 3000, 28, 'right', 8),
+    new fish('shark', 'type100', 3000, -40, 'right', 9),
+    new fish('fish', 'type4', 3000, 34, 'left', 10),
+    new fish('fish', 'type4', 3000, 40, 'left', 11),
+    new fish('fish', 'type4', 3000, 45, 'right', 12),
+    new fish('fish', 'type5', 3000, 52, 'right', 13),
+    new fish('fish', 'type5', 3000, 58, 'right', 14),
+    new fish('fish', 'type5', 3000, 64, 'left', 15),
+    new fish('fish', 'type6', 3000, 70, 'right', 16),
+    new fish('fish', 'type6', 3000, 72, 'left', 17),
+    new fish('goldFish', 'type100', 3000, 150, 'right', 18),
+    new fish('turtle', 'type100', 3000, -180, 'right', 19),
+    new fish('algea', 'type100', 3000, 0, 'right', 20),
+    new fish('garbage', 'type100', 3000, 0, 'left', 21),
+    new fish('garbage', 'type100', 3000, 0, 'right', 22),
+    new fish('garbage', 'type100', 3000, 0, 'left', 23)
+]
 
 
 // // generer avec class
@@ -468,7 +470,7 @@ let specie24 = new fish('garbage', 'type100', 3000, 0, 'left')
 // // // mouse click
 const fishArray = document.querySelectorAll('.fish')
 const fishClicked = []
-
+let coin, totalCoin = document.querySelector('.totalCoin'), TCoin = 0
 
 fishArray.forEach(function(element, index)
 {
@@ -476,6 +478,10 @@ fishArray.forEach(function(element, index)
         if(!fishClicked.includes(element)) {
             fishClicked.push(element)
             element.classList.remove('.water')
+            
+            Coin = fishs[element.getAttribute('data-position')].price
+            TCoin = TCoin + Coin
+            totalCoin.innerHTML = TCoin
         }
         else {
             console.log('fish in array')
@@ -486,6 +492,8 @@ fishArray.forEach(function(element, index)
         })
     })
 })
+
+
 
 function fishFollow(clientX, clientY, element) {
     let fishX = clientX - element.width / 2
