@@ -66,20 +66,32 @@ soundsButton.addEventListener(
     function(){
         if(switch1 == false){
             for (let i = 0; i < soundsAudio.length; i++) {
-                soundsAudio[i].removeAttribute('muted')
-                OffOn1.innerHTML = 'On'
+                soundsAudio[i].pause()
+                OffOn1.innerHTML = 'Off'
             }
         }else{
             for (let i = 0; i < soundsAudio.length; i++) {
-                soundsAudio[i].setAttribute('muted', '')
-                OffOn1.innerHTML = 'Off'
+                soundsAudio[i].play()
+                OffOn1.innerHTML = 'On'
             }
         }
         switch1 = !switch1
     }
 )
 
-//Music
+// //Music
+// const $music = document.querySelector('.musicAudio')
+// let isMusicOn = false
+
+// #CloseButtonRulesPages.addEventListener( // !!!
+//     'click',
+//     function() {
+//         if(!isMusicOn) {
+//             $music.play()
+//         }
+//     }
+// )
+
 const musicButton = document.querySelector('.music')
 const musicAudio = document.querySelector('.musicAudio')
 const OffOn2 = document.querySelector('.musicOffOn')
@@ -89,15 +101,16 @@ musicButton.addEventListener(
     'click',
     function(){
         if(switch2 == false){
-            musicAudio.removeAttribute('muted')
-            OffOn2.innerHTML = 'On'
-        }else{
-            musicAudio.setAttribute('muted', '')
+            musicAudio.pause()
             OffOn2.innerHTML = 'Off'
+        }else{
+            musicAudio.play()
+            OffOn2.innerHTML = 'On'
         }
         switch2 = !switch2
     }
 )
+
 
 // <<<<<<< HEAD
 // <<<<<<< HEAD
