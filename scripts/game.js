@@ -46,7 +46,6 @@ for (let i = 0; i < subMenus.length; i++) {
 }
 
 //Add Username
-
 addUsername()
 
 function addUsername(){
@@ -55,6 +54,18 @@ function addUsername(){
     username.innerHTML = localStorage.getItem('localUsername')
     }
 }
+
+//Music
+const musicButton = document.querySelector('.sounds')
+const musicAudio = document.querySelector('.musicAudio')
+
+musicButton.addEventListener(
+    'click',
+    function(){
+        musicAudio.removeAttribute('muted')
+        musicAudio.setAttribute('muted')
+    }
+)
 
 // <<<<<<< HEAD
 // <<<<<<< HEAD
