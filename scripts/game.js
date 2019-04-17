@@ -51,6 +51,67 @@ settingButton.addEventListener(
 // <<<<<<< HEAD
 // //GAME MECA/////////////////////////////
 
+window.onscroll = function() {myFunction()};
+ 
+function myFunction() {
+var x = document.documentElement.scrollTop
+console.log(x)
+if (x > 2250) 
+{
+console.log("youhou");
+}
+else
+{
+console.log("Oh")
+}
+ 
+}
+
+class fish {
+    constructor(id, type, speed, price, direction)
+    {
+        this.id = id
+        this.type = type
+        this.speed = speed
+        this.price = price
+        this.direction = direction
+        this.posX = 10
+        this.posY = 20
+    }  
+    //function display(){
+        
+    }
+    function move(){
+        
+    }
+//}
+
+let specie1 = new fish('fish', 'type1', 3000, 8, 'right')
+let specie2 = new fish('fish', 'type1', 3000, 10, 'right')
+let specie3 = new fish('fish', 'type1', 3000, 15, 'left')
+let specie4 = new fish('fish', 'type1', 3000, 20, 'left')
+let specie5 = new fish('fish', 'type2', 3000, 25, 'right')
+let specie6 = new fish('fish', 'type2', 3000, 30, 'right')
+let specie7 = new fish('whale', 'type100', 3000, -180, 'right')
+let specie8 = new fish('fish', 'type3', 3000, 20, 'right')
+let specie9 = new fish('fish', 'type3', 3000, 28, 'right')
+let specie10 = new fish('shark', 'type100', 3000, -40, 'right')
+let specie11 = new fish('fish', 'type4', 3000, 34, 'left')
+let specie12 = new fish('fish', 'type4', 3000, 40, 'left')
+let specie13 = new fish('fish', 'type4', 3000, 45, 'right')
+let specie14 = new fish('fish', 'type5', 3000, 52, 'right')
+let specie15 = new fish('fish', 'type5', 3000, 58, 'right')
+let specie16 = new fish('fish', 'type5', 3000, 64, 'left')
+let specie17 = new fish('fish', 'type6', 3000, 70, 'right')
+let specie18 = new fish('fish', 'type6', 3000, 72, 'left')
+let specie19 = new fish('goldFish', 'type100', 3000, 150, 'right')
+let specie20 = new fish('turtle', 'type100', 3000, -180, 'right')
+let specie21 = new fish('algea', 'type100', 3000, 0, 'right')
+let specie22 = new fish('garbage', 'type100', 3000, 0, 'left')
+let specie23 = new fish('garbage', 'type100', 3000, 0, 'right')
+let specie24 = new fish('garbage', 'type100', 3000, 0, 'left')
+
+
 // // generer avec class
 // /*class Fish {
 //     constructor(id, type, speed, deep, price)
