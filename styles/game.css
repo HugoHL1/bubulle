@@ -407,6 +407,7 @@ BODY
     display: flex;
     font-weight: bolder;
     align-items: center;
+    cursor: pointer;
 }
 
 .priceHook img{
