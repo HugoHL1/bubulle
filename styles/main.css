@@ -150,28 +150,30 @@ footer{
     top: 216%;
     width: 100%;
     background: #eb8e8e;
+    display: flex;
+    justify-content: center;
 }
 .footContainer{
-    padding-top: 3%;
-    margin: 0 40px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .footA{
-    width: 50%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
-.footBtn a{
+.footA a{
     text-decoration: none;
     color: #FFF;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .footSocial{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .footSocial img{
@@ -206,7 +208,7 @@ footer{
 .gradient{
     position : absolute;
     background-image : linear-gradient(#AEE4FF, #071635);
-    height : 65%;
+    height : 80%;
     width : 100%;
     top : 1291px;
 }
