@@ -29,7 +29,6 @@ const numberFishPossible = document.querySelector('#numberFishPossible')
                         coin = fishs[element.getAttribute('data-position')].price
                         TCoin = TCoin + coin
                         totalCoin.innerHTML = TCoin
-                        
                     }
                     else {
                         console.log('fish in array')
@@ -45,7 +44,7 @@ const numberFishPossible = document.querySelector('#numberFishPossible')
                     //Faire en sorte que les poisson ne suivent plus la souris 
                     fishClicked = []
                     numberFishCaught.innerHTML = fishClicked.length
-                    
+                    coinSound.play()
                     startGame()
                 }
             })
@@ -561,12 +560,15 @@ dynAdd.addEventListener(
 
 // Dynamite activation
 const explosionUse = document.querySelector('.explosionSoundUse')
+const coinValueDyn = 500
 window.addEventListener('keydown', function (eventExplosion){
     if((eventExplosion.key == "d") && (dynNum > 0)){
         // Name of the function dynamite
         explosionUse.play()
         dynNum = dynNum - 1
         dynNumberP.innerHTML = dynNum
+        TCoin += coinValueDyn
+        totalCoin.innerHTML = TCoin
     }
 })
 
@@ -576,6 +578,5 @@ window.addEventListener('keydown', function (eventCoin){
     if(eventCoin.key == "$"){
         TCoin += coinValue
         totalCoin.innerHTML = TCoin
-        coinSound.play()
     }
 })
