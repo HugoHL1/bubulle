@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    /*background: #9fe5ff;*/
 }
 
 .container {
@@ -10,9 +9,6 @@ body {
     margin: 0 auto;
     padding: 0;
     position: absolute;
-    /*background-image: url("../images/fond.png") ;
-    background-size: 110%;
-    background-repeat: no-repeat;*/
 }
 
 .firstContainer {
@@ -92,7 +88,6 @@ h1 {
 .secondContainer {
     width: 100%;
     margin: 5% auto;
-    /*background: #9fe5ff;*/
     height: 400px;
 }
 
@@ -116,7 +111,6 @@ h1.title2 {
 .thirdContainer {
     width: 100%;
     margin: 5% auto;
-    /*background: #9fe5ff;*/
     height: 275px;
 }
 
@@ -184,7 +178,7 @@ footer {
 }
 
 
-/*BACROUND*/
+/*BACROUND$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 #island {
     position: absolute;
@@ -233,7 +227,6 @@ footer {
 #g2 {
     top: 1500px;
 }
-
 
 .graduation p {
     color: white;
