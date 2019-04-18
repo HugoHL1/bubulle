@@ -136,36 +136,7 @@ rulesButton.addEventListener('click', function(){
     gameRules.style.display = 'block'
 })
 
-//Upgrade boat
 
-let upgradeB = 0
-let tImages = [
-    "images/FisherMan2.png",
-    "images/FisherMan3.png",
-    "images/commingsoon.png"
-]
-let btnUpBoat = document.querySelector('#upgradeBoat')
-let imgSub = document.querySelector('#fisherBoatImage')
-let imgBack = document.querySelector('#fisherMan')
-let upgradeLevelBoat = 1 
-let boatLevelP = document.querySelector('#levelBoat')
-
-btnUpBoat.addEventListener(
-    'click',
-    function upgradeBoat()
-    {
-        //ADD +1 SUR LEVEL!!!!!!!!
-        if(upgradeB<2){
-        upgradeB++
-        console.log(upgradeB)
-        imgSub.src=tImages[upgradeB]
-        imgBack.src=tImages[upgradeB-1]
-        upgradeLevelBoat = upgradeLevelBoat + 1
-        boatLevelP.innerHTML = upgradeLevelBoat 
-        //saveStat()
-        }
-    }
-)
 
 //Add dynamite upgrade
 
@@ -621,10 +592,6 @@ fishArray.forEach(function(element, index)
 })
 
 
-
-
-
-
 function fishFollow(clientX, clientY, element) {
     let fishX = clientX - element.width / 2
     let fishY = clientY - element.height / 2
@@ -638,6 +605,51 @@ function fishFollow(clientX, clientY, element) {
     //console.log('test');
     
 }
+
+
+//Upgrade boat
+
+let upgradeB = 0
+let tImages = [
+    "images/FisherMan2.png",
+    "images/FisherMan3.png",
+    "images/commingsoon.png"
+]
+let btnUpBoat = document.querySelector('#upgradeBoat')
+let imgSub = document.querySelector('#fisherBoatImage')
+let imgBack = document.querySelector('#fisherMan')
+let upgradeLevelBoat = 1 
+let boatLevelP = document.querySelector('#levelBoat')
+const priceBoat = document.querySelector('#priceBoat')
+
+let boatCoin = 300
+
+btnUpBoat.addEventListener(
+    'click',
+    function upgradeBoat()
+    {
+        
+
+        if(boatCoin < TCoin){
+            //ADD +1 SUR LEVEL!!!!!!!!
+            if(upgradeB<2){
+            upgradeB++
+            console.log(upgradeB)
+            imgSub.src=tImages[upgradeB]
+            imgBack.src=tImages[upgradeB-1]
+            upgradeLevelBoat = upgradeLevelBoat + 1
+            boatLevelP.innerHTML = upgradeLevelBoat 
+            //saveStat()
+            TCoin = TCoin - boatCoin
+            boatCoin = boatCoin + 5000
+            priceBoat.innerHTML = boatCoin
+            totalCoin.innerHTML = TCoin
+            }
+        }
+    }
+)
+
+
 
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 
