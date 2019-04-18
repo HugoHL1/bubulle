@@ -620,9 +620,10 @@ BODY
     background-color: rgba(255, 255, 255, 0.651);
     display: block;
     z-index: 100;
-    font-family: 'Josefin Sans'
-
+    font-family: 'Josefin Sans';
+    position: fixed;
 }
+
 #text{
     padding-left: 40%; 
     margin-top:120px;

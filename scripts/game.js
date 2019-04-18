@@ -50,7 +50,7 @@ addUsername()
 
 function addUsername(){
     if(localStorage.getItem('localUsername') != null){
-    let username = document.querySelector(".pseudo")
+    let username = document.querySelector('.pseudo')
     username.innerHTML = localStorage.getItem('localUsername')
     }
 }
