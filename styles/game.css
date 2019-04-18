@@ -376,6 +376,11 @@ BODY
     text-align: center;
 }
 
+#fishingButton{
+    text-decoration: none;
+    color: white;
+}
+
 /*Button Hook*/
 .buttonHook{
     background-color: #2E92C0;
