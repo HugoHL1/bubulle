@@ -304,13 +304,7 @@ class fish {
         this.posX = 10
         this.posY = 20
     }  
-    //function display(){
-        
-    }
-    function move(){
-        
-    }
-//}
+}
 let fishs = 
 [
     new fish('fish', 'type1', 3000, 8, 'right', 0),
