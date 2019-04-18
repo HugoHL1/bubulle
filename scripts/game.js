@@ -176,8 +176,13 @@ function startGame(){
         new fish('fish', 'type1', 15, 20, 'left', 3),
         new fish('fish', 'type1', 14, 20, 'left', 3),
         new fish('fish', 'type2', 10, -100, 'left', 4),
+<<<<<<< HEAD
         new fish('fish', 'type2', 8, -100, 'left', 4),
         new fish('fish', 'type2', 14, -100, 'left', 4),
+=======
+        new fish('fish', 'type2', 8, 25, 'left', 4),
+        new fish('fish', 'type2', 14, 25, 'left', 4),
+>>>>>>> 821d6fa76f4685ebbb7dfeeda0bd0c4c8d37a2be
         new fish('fish', 'type2', 11, 30, 'right', 5),
         new fish('fish', 'type2', 13, 30, 'right', 5),
         new fish('fish', 'type2', 9, 30, 'right', 5),
@@ -417,7 +422,6 @@ rulesButton.addEventListener('click', function(){
 // }
 
 // Start the game 
-const buttonStart = document.querySelector('.buttonStart')
 
 
 /*
@@ -444,8 +448,6 @@ let upPriceHook = 100
 let upLevelHook = 1
 
 buttonHook.style.transform = 'translateY(130%)'
-TCoin = 300
-totalCoin.innerHTML = TCoin
 
 //if (priceHook < TCoin){
 console.log('totalCoin = '+TCoin)
@@ -580,3 +582,12 @@ window.addEventListener('keydown', function (eventCoin){
         totalCoin.innerHTML = TCoin
     }
 })
+
+const waterSound = document.querySelector('#fishingButton')
+const waterSoundUse = document.querySelector('.waterSoundUse')
+waterSound.addEventListener(
+    'click',
+    function(){
+        waterSoundUse.play()
+    }
+)
