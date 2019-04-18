@@ -80,17 +80,17 @@ soundsButton.addEventListener(
 )
 
 //Music
-// const $music = document.querySelector('.musicAudio')
-// let isMusicOn = false
+const $music = document.querySelector('.musicAudio')
+let isMusicOn = false
 
-// #CloseButtonRulesPages.addEventListener( // !!!
-//     'click',
-//     function() {
-//         if(!isMusicOn) {
-//             $music.play()
-//         }
-//     }
-// )
+closeCrossButton.addEventListener(
+    'click',
+    function() {
+        if(!isMusicOn) {
+            $music.play()
+        }
+    }
+)
 
 const musicButton = document.querySelector('.music')
 const musicAudio = document.querySelector('.musicAudio')
