@@ -580,3 +580,12 @@ window.addEventListener('keydown', function (eventCoin){
         totalCoin.innerHTML = TCoin
     }
 })
+
+const waterSound = document.querySelector('#fishingButton')
+const waterSoundUse = document.querySelector('.waterSoundUse')
+waterSound.addEventListener(
+    'click',
+    function(){
+        waterSoundUse.play()
+    }
+)
