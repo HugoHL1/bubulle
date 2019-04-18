@@ -53,15 +53,6 @@ function scrollStory(){
 
 window.addEventListener('scroll', scrollStory)
 
-/*function scrollRules(){
-    let ypos = window.pageYOffset
-    if(ypos > 800){
-        playText()
-    }
-}*/
-
-//window.addEventListener('scroll', scrollRules)
-
 const playBtn = document.querySelector(".submit")
 const form = document.querySelector('form')
 let inputUsername = document.querySelector(".nick")

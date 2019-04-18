@@ -492,18 +492,6 @@ dynAdd.addEventListener(
     )
     
 
-// >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
-
-
-
-// // // let x = event.clientX    // Get the horizontal coordinate
-// // // let y = event.clientY   // Get the vertical coordinate
-// // // let coor = "X coords: " + x + ", Y coords: " + y
-// // // console.log(coor)
-// <<<<<<< HEAD
-// >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
-// =======
-// >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 
 
 // Dynamite activation
