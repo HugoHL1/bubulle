@@ -147,6 +147,8 @@ let tImages = [
 let btnUpBoat = document.querySelector('#upgradeBoat')
 let imgSub = document.querySelector('#fisherBoatImage')
 let imgBack = document.querySelector('#fisherMan')
+let upgradeLevelBoat = 1 
+let boatLevelP = document.querySelector('#levelBoat')
 
 btnUpBoat.addEventListener(
     'click',
@@ -158,6 +160,8 @@ btnUpBoat.addEventListener(
         console.log(upgradeB)
         imgSub.src=tImages[upgradeB]
         imgBack.src=tImages[upgradeB-1]
+        upgradeLevelBoat = upgradeLevelBoat + 1
+        boatLevelP.innerHTML = upgradeLevelBoat 
         //saveStat()
         }
     }
