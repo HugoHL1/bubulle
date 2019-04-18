@@ -310,7 +310,7 @@ soundsButton.addEventListener(
     function(){
         if(switch1 == false){
             for (let i = 0; i < soundsAudio.length; i++) {
-                soundsAudio[i].pause()
+                soundsAudio[i].play()
                 OffOn1.innerHTML = 'Off'
             }
         }else{
