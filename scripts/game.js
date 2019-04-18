@@ -41,7 +41,6 @@ const numberFishPossible = document.querySelector('#numberFishPossible')
                 }
                 if(fishClicked.length == upLevelHook){
                     document.documentElement.scrollTop='0px'
-                    //Faire en sorte que les poisson ne suivent plus la souris 
                     fishClicked = []
                     numberFishCaught.innerHTML = fishClicked.length
                     coinSound.play()
@@ -279,7 +278,6 @@ settingButton.addEventListener(
     }
 )
 
-//Suppression de la propagation du click
 const subMenus = document.querySelectorAll('.subMenu')
 
 for (let i = 0; i < subMenus.length; i++) {
