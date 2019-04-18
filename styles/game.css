@@ -269,7 +269,7 @@ BODY
 #island {
     position : absolute;
     width : 700px;
-    top : 100px;
+    top : 110px;
     z-index : -10;
     cursor: auto;
 }
