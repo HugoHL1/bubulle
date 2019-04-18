@@ -135,6 +135,7 @@ const rulesButton = document.querySelector('.rules')
 rulesButton.addEventListener('click', function(){
     gameRules.style.display = 'block'
     body.style.overflow = 'hidden'
+    numberFish.style.visibility = 'hidden'
 })
 
 // <<<<<<< HEAD
