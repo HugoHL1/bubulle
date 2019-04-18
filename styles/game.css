@@ -366,6 +366,7 @@ BODY
     align-items: center;
     justify-content: center;
     margin: 10% auto;
+    margin-top: 15%;
     cursor: pointer;
     display: none;
     box-shadow:10px 10px 10px #A16E6E;
