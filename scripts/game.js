@@ -383,57 +383,6 @@ rulesButton.addEventListener('click', function(){
     numberFish.style.visibility = 'hidden'
 })
 
-// <<<<<<< HEAD
-// <<<<<<< HEAD
-// //GAME MECA/////////////////////////////
-
-
-
-// function myFunction() {
-//     var x = document.documentElement.scrollTop
-//     //console.log(x)
-//     if (x >= 790 && x < 2290){
-//         //Faire spawn des poissons de type 1 et 2 
-//         for(let i = 0; i<= fishType1.length ; i++){
-//             posFishY = Math.floor(Math.random()*(2290-790)+790)
-//             console.log('La position du poisson '+fishType1+' est '+posFishY)
-//         }
-        
-//         console.log("Poisson de type 1 et 2")
-//     }
-//     else if(x >= 2290 && x < 3790){
-//         // Faire spawn des poissons de type 2 et 3
-//         console.log("Poisson de type 2 et 3")
-//     }else if (x >= 3790 && x < 5290){
-//         // Faire spawn des poissons de type 3 et 4
-//         console.log("Poisson de type 3 et 4")
-//     }else if (x >= 5290 && x < 6790){
-//         // Faire spawn des poissons de type 4 et 5
-//         console.log("Poisson de type 4 et 5")
-//     }else if (x >= 6790 && x < 8290){
-//         // Faire spawn des poissons de type 5 et 6
-//         console.log("Poisson de type 5 et 6")
-//     }else{
-//         console.log("No fish area")
-//     } 
-// }
-
-// Start the game 
-
-
-/*
-function scrollAuto(){
-    window.scrollBy(0,1)
-    setTimeout('scrollAuto()',1);   
-}
-
-buttonStart.addEventListener(
-    'click',
-    
-    scrollAuto()
-)
-*/
-
 // // // mouse click
 
 // Button Hook 
