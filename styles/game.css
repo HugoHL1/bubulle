@@ -532,7 +532,9 @@ BODY
 }
 
 /*DIMENSION*/
-
+#f0{
+    width: 200px;
+}
 #f1{
     width: 200px;
 }
