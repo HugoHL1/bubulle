@@ -535,15 +535,6 @@ BODY
 
 #f1{
     width: 200px;
-    animation: animf1 14s infinite;
-}
-@keyframes animf1 {
-    0% {
-        transform: translateX(110%);
-    }
-    100% {
-        transform: translateX(-10%);
-    }
 }
 #f2{
     width: 200px;
@@ -555,64 +546,64 @@ BODY
     width: 200px;
 }
 #f5{
-    width: 200px;
+    width: 220px;
 }
 #f6{
-    width: 200px;
+    width: 160px;
 }
 #f7{
-    width: 200px;
+    width: 900px;
 }
 #f8{
-    width: 200px;
+    width: 150px;
 }
 #f9{
     width: 200px;
 }
 #f10{
-    width: 200px;
+    width: 500px;
 }
 #f11{
-    width: 200px;
+    width: 180px;
 }
 #f12{
-    width: 200px;
+    width: 175px;
 }
 #f13{
-    width: 200px;
+    width: 180px;
 }
 #f14{
-    width: 200px;
+    width: 150px;
 }
 #f15{
-    width: 200px;
+    width: 150px;
 }
 #f16{
-    width: 200px;
+    width: 70px;
 }
 #f17{
     width: 200px;
 }
 #f18{
-    width: 200px;
+    width: 160px;
 }
 #f19{
     width: 60px;
 }
 #f20{
-    width: 200px;
+    width: 320px;
 }
 #f21{
-    width: 200px;
+    width: 150px;
 }
 #f22{
-    width: 200px;
+    width: 70px;
 }
 #f23{
-    width: 200px;
+    width: 150px;
 }
 #f24{
-    width: 200px;
+    width: 50px;
 }
 
 .gameRules{
