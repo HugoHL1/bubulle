@@ -177,9 +177,9 @@ for(let j = 0; j< fishType2.length ; j++){
     console.log(posFishType2Y)
     fishType2[j].style.top = posFishType2Y + 'px'
     if (fishType2[j].classList.contains('right')){
-        fishType2[j].style.right = -20 + '%'
+        fishType2[j].style.right = 110 + 'vw'
     }else if(fishType2[j].classList.contains('left')){
-        fishType2[j].style.left = -10 + '%'
+        fishType2[j].style.left = -10 + 'vw'
     }
 }
 
@@ -189,9 +189,9 @@ for(let k = 0; k < fishType3.length ; k++){
     console.log(posFishType3Y)
     fishType3[k].style.top = posFishType3Y + 'px'
     if (fishType3[k].classList.contains('right')){
-        fishType3[k].style.right = -20 + '%'
+        fishType3[k].style.right = 110 + 'vw'
     }else if(fishType3[k].classList.contains('left')){
-        fishType3[k].style.left = -10 + '%'
+        fishType3[k].style.left = -10 + 'vw'
     }
 }
 
@@ -201,9 +201,9 @@ for(let l = 0; l< fishType4.length ; l++){
     console.log(posFishType4Y)
     fishType4[l].style.top = posFishType4Y + 'px'
     if (fishType4[l].classList.contains('right')){
-        fishType4[l].style.right = -20 + '%'
+        fishType4[l].style.right = 110 + 'vw'
     }else if(fishType4[l].classList.contains('left')){
-        fishType4[l].style.left = -10 + '%'
+        fishType4[l].style.left = -10 + 'vw'
     }
 }
 
@@ -213,9 +213,9 @@ for(let m = 0; m< fishType5.length ; m++){
     console.log(posFishType5Y)
     fishType5[m].style.top = posFishType5Y + 'px'
     if (fishType5[m].classList.contains('right')){
-        fishType5[m].style.right = -20 + '%'
+        fishType5[m].style.right = 110 + 'vw'
     }else if(fishType5[m].classList.contains('left')){
-        fishType5[m].style.left = -10 + '%'
+        fishType5[m].style.left = -10 + 'vw'
     }
 }
 
@@ -225,9 +225,9 @@ for(let n = 0; n< fishType6.length ; n++){
     console.log(posFishType6Y)
     fishType6[n].style.top = posFishType6Y + 'px'
     if (fishType6[n].classList.contains('right')){
-        fishType6[n].style.right = -20 + '%'
+        fishType6[n].style.right = 110 + 'vw'
     }else if(fishType6[n].classList.contains('left')){
-        fishType6[n].style.left = -10 + '%'
+        fishType6[n].style.left = -10 + 'vw'
     }
 }
 
@@ -237,9 +237,9 @@ for(let o = 0; o< fishType100.length ; o++){
     console.log(posFishType100Y)
     fishType100[o].style.top = posFishType100Y + 'px'
     if (fishType100[o].classList.contains('right')){
-        fishType100[o].style.right = -20 + '%'
+        fishType100[o].style.right = 110 + 'vw'
     }else if(fishType100[o].classList.contains('left')){
-        fishType100[o].style.left = -10 + '%'
+        fishType100[o].style.left = -10 + 'vw'
     }
 }
 
