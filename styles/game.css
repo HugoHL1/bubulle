@@ -387,6 +387,7 @@ BODY
     margin: -5% auto;
     color: white;
     box-shadow:10px 10px 10px #3D6678;
+    cursor: pointer;
 }
 
 .levelHook{
@@ -407,7 +408,6 @@ BODY
     display: flex;
     font-weight: bolder;
     align-items: center;
-    cursor: pointer;
 }
 
 .priceHook img{
