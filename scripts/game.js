@@ -9,7 +9,7 @@ const deep0 = 790,
     deep8 = 6790,
     deep10 = 8290
 let fishs = []
-const fishClicked = []
+let fishClicked = []
 let coin, totalCoin = document.querySelector('.totalCoin'), TCoin = 0
 const numberFishCaught = document.querySelector('#numberFishCaught')
 const numberFishPossible = document.querySelector('#numberFishPossible')
@@ -43,6 +43,9 @@ const numberFishPossible = document.querySelector('#numberFishPossible')
                 if(fishClicked.length == upLevelHook){
                     document.documentElement.scrollTop='0px'
                     //Faire en sorte que les poisson ne suivent plus la souris 
+                    fishClicked = []
+                    numberFishCaught.innerHTML = fishClicked.length
+                    
                     startGame()
                 }
             })
