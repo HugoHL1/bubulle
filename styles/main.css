@@ -141,17 +141,19 @@ h1.title2{
 .howPlayP{
     color: #FFF;
     font-size: 30px;
+    padding: 7%;
 }
 
 footer{
     height: 100px;
     position: absolute;
-    top: 215%;
+    top: 216%;
     width: 100%;
     background: #eb8e8e;
 }
 .footContainer{
-    margin: 40px;
+    padding-top: 3%;
+    margin: 0 40px;
     display: flex;
     justify-content: space-between;
 }

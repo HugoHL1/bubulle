@@ -2,7 +2,7 @@ let pos = 0
 let howPdiv = document.querySelector('.howPlayP')
 let howP = new Array("Pour jouer c'est très simple il suffit de vous munir d'une souris ou de votre track pad, si vous possédez la puissance. ","Afin de contrôler la canne a pêche et commencez attraper des poissons en pressant le click gauche de votre souris. ")
 
-
+playText()
 function playText()
 {
     let action = setInterval(
@@ -27,11 +27,18 @@ function playText()
     }
     
     let i = 0, story
-    story = "Dans ce jeu vous incarnerez Michel le pécheur. Votre but, attraper le plus de poisson pour amasser un maximum d’argent ! \r<br> Attention aux algues, aux déchets, aux bombes et aux espèces protégées ; elles vous infligeront des mallus si vous les touchez.<br> Il y a plusieurs zones différentes suivant la profondeur, plus vous allez loin plus vous avez une chance d’attraper des poissons qui vous rapportent une grosse somme."
+    story = "Dans ce jeu vous incarnerez Michel le pécheur. Votre but, attraper le plus de poisson pour amasser un maximum d’argent ! < Attention aux algues, aux déchets, aux bombes et aux espèces protégées ; elles vous infligeront des mallus si vous les touchez.< Il y a plusieurs zones différentes suivant la profondeur, plus vous allez loin plus vous avez une chance d’attraper des poissons qui vous rapportent une grosse somme."
     
     function typing(){
         if(i<story.length){
-            document.querySelector('.story').innerHTML += story.charAt(i)
+            let char;
+            if(story.charAt(i) == '<'){
+                char = '<br><br>'
+            }
+            else{
+                char = story.charAt(i)
+            }
+            document.querySelector('.story').innerHTML += char
             i++
             setTimeout(typing,20)
         }
@@ -46,14 +53,14 @@ function scrollStory(){
 
 window.addEventListener('scroll', scrollStory)
 
-function scrollRules(){
+/*function scrollRules(){
     let ypos = window.pageYOffset
     if(ypos > 800){
         playText()
     }
-}
+}*/
 
-window.addEventListener('scroll', scrollRules)
+//window.addEventListener('scroll', scrollRules)
 
 const playBtn = document.querySelector(".submit")
 const form = document.querySelector('form')
