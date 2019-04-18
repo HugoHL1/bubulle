@@ -565,9 +565,13 @@ fishArray.forEach(function(element, index)
                 fishFollow(_event.clientX, _event.clientY, element)
             })
             numberFishCaught.innerHTML = fishClicked.length
+        }else if(fishClicked.length == upLevelHook){
+            document.documentElement.scrollTop='0px'
+            //Faire en sorte que les poisson ne suivent plus la souris 
         }
     })
 })
+
 
 
 
