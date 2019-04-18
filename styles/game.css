@@ -365,6 +365,7 @@ BODY
     align-items: center;
     justify-content: center;
     margin: 10% auto;
+    margin-top: 15%;
     cursor: pointer;
 }
 
