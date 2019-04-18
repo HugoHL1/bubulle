@@ -269,6 +269,7 @@ BODY
     width : 700px;
     top : 100px;
     z-index : -10;
+    cursor: auto;
 }
 
 #path1{
@@ -350,6 +351,7 @@ BODY
     position : absolute; 
     top : 445px;
     left : 70%;
+    cursor: auto;
 }
 
 /*Button start*/
