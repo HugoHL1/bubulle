@@ -9,7 +9,7 @@ const deep0 = 790,
     deep8 = 6790,
     deep10 = 8290
 let fishs = []
-const fishClicked = []
+let fishClicked = []
 let coin, totalCoin = document.querySelector('.totalCoin'), TCoin = 0
 const numberFishCaught = document.querySelector('#numberFishCaught')
 const numberFishPossible = document.querySelector('#numberFishPossible')
@@ -43,6 +43,9 @@ const numberFishPossible = document.querySelector('#numberFishPossible')
                 if(fishClicked.length == upLevelHook){
                     document.documentElement.scrollTop='0px'
                     //Faire en sorte que les poisson ne suivent plus la souris 
+                    fishClicked = []
+                    numberFishCaught.innerHTML = fishClicked.length
+                    
                     startGame()
                 }
             })
@@ -560,11 +563,21 @@ dynAdd.addEventListener(
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 
 
-// Activation de la dynamite
-window.addEventListener('keydown', function (event){
-    if(event.key == "d"){
-        // nom de la function de l'evenement causé par la dynamite
-        console.log('function actived') // voir si la function s'active à l'activation de la touche d
+// Dynamite activation
+const explosionUse = document.querySelector('.explosionSoundUse')
+window.addEventListener('keydown', function (eventExplosion){
+    if(eventExplosion.key == "d"){
+        // Name of the function dynamite
+        explosionUse.play()
     }
 })
 
+const coinSound = document.querySelector('.coinSoundUse')
+const coinValue = 500
+window.addEventListener('keydown', function (eventCoin){
+    if(eventCoin.key == "$"){
+        TCoin += coinValue
+        totalCoin.innerHTML = TCoin
+        coinSound.play()
+    }
+})
