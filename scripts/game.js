@@ -445,8 +445,6 @@ let upPriceHook = 100
 let upLevelHook = 1
 
 buttonHook.style.transform = 'translateY(130%)'
-TCoin = 300
-totalCoin.innerHTML = TCoin
 
 //if (priceHook < TCoin){
 console.log('totalCoin = '+TCoin)

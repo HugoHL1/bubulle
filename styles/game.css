@@ -291,7 +291,7 @@ BODY
 .gradient{
     position : absolute;
     background-image : linear-gradient(#AEE4FF, #071635);
-    height : 9000px;
+    height : 7000px;
     width : 100%;
     top : 1291px;
 }
