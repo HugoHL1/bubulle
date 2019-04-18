@@ -136,6 +136,32 @@ rulesButton.addEventListener('click', function(){
     gameRules.style.display = 'block'
 })
 
+//Upgrade boat
+
+let upgradeB = 0
+let tImages = [
+    "images/FisherMan2.png",
+    "images/FisherMan3.png",
+    "images/commingsoon.png"
+]
+let btnUpBoat = document.querySelector('#upgradeBoat')
+let imgSub = document.querySelector('#fisherBoatImage')
+let imgBack = document.querySelector('#fisherMan')
+
+btnUpBoat.addEventListener(
+    'click',
+    function upgradeBoat()
+    {
+        //ADD +1 SUR LEVEL!!!!!!!!
+        if(upgradeB<2){
+        upgradeB++
+        console.log(upgradeB)
+        imgSub.src=tImages[upgradeB]
+        imgBack.src=tImages[upgradeB-1]
+        //saveStat()
+        }
+    }
+)
 // <<<<<<< HEAD
 // <<<<<<< HEAD
 // //GAME MECA/////////////////////////////
