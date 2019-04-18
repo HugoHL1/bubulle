@@ -269,7 +269,7 @@ BODY
 #island {
     position : absolute;
     width : 700px;
-    top : 100px;
+    top : 110px;
     z-index : -10;
     cursor: auto;
 }
@@ -511,7 +511,7 @@ BODY
     position: fixed;
 }
 
-.background{
+.background, .backgroundAnim{
     position: relative;
     cursor: url("https://s3-eu-west-1.amazonaws.com/sc-files.pjms.fr/p/pjms/823/000/097/160/7e637f9bc3134f3d8b344ca1bb8ca1d1.png")90 70,auto;
 }
