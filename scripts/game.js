@@ -548,3 +548,11 @@ window.addEventListener('keydown', function (event){
         console.log('function actived') // voir si la function s'active à l'activation de la touche d
     }
 })
+
+const gameRules = document.querySelector('.gameRules')
+const closeCrossButton = document.querySelector('#closeCross')
+
+
+closeCrossButton.addEventListener('click', function(){
+    gameRules.style.display = 'none'
+})
