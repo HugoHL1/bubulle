@@ -494,16 +494,26 @@ BODY
     }
 }
 
-.water{
-	animation: test1 15s infinite;
+.right {
+	animation: left 15s infinite;
 }
-
-@keyframes test1 {
+@keyframes left {
     0% {
-        transform: translateX(110%);
+        transform: translateX(110vw);
     }
     100% {
-        transform: translateX(-10%);
+        transform: translateX(-10vw);
+    }
+}
+.left {
+	animation: right 15s infinite;
+}
+@keyframes right {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(110vw);
     }
 }
 

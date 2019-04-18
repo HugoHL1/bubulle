@@ -125,7 +125,7 @@ closeCrossButton.addEventListener('click', function(){
     buttonStartContainer.style.justifyContent = 'center'
     buttonStartContainer.style.transform = 'translateY(350%)'
     startButton.style.display = 'block'
-    body.style.overflow = 'scroll'
+    body.style.overflowY = 'scroll'
     numberFish.style.visibility = 'visible'
 })
 
@@ -212,9 +212,9 @@ for(let i = 0; i < fishType1.length ; i++){
     console.log(posFishType1Y)
     fishType1[i].style.top = posFishType1Y + 'px'
     if (fishType1[i].classList.contains('right')){
-        fishType1[i].style.right = -20 + '%'
+        fishType1[i].style.right = 110 + 'vw'
     }else if(fishType1[i].classList.contains('left')){
-        fishType1[i].style.left = -10 + '%'
+        fishType1[i].style.left = -10 + 'vw'
     }
 }
 
@@ -594,11 +594,11 @@ buttonHook.addEventListener('click',
 
 fishArray.forEach(function(element, index)
 {
-    element.addEventListener('mousedown', (_event) => {
+    element.addEventListener('click', (_event) => {
         if (fishClicked.length < upLevelHook){
             if(!fishClicked.includes(element)) {
                 fishClicked.push(element)
-                element.classList.remove('water')
+                element.classList.remove('left','right')
                 
                 Coin = fishs[element.getAttribute('data-position')].price
                 TCoin = TCoin + Coin
@@ -613,7 +613,8 @@ fishArray.forEach(function(element, index)
                 fishFollow(_event.clientX, _event.clientY, element)
             })
             numberFishCaught.innerHTML = fishClicked.length
-        }else if(fishClicked.length == upLevelHook){
+        }
+        if(fishClicked.length == upLevelHook){
             document.documentElement.scrollTop='0px'
             //Faire en sorte que les poisson ne suivent plus la souris 
         }
