@@ -393,10 +393,11 @@ let upPriceHook = 100
 let upLevelHook = 1
 
 buttonHook.style.transform = 'translateY(130%)'
+TCoin = 300
+totalCoin.innerHTML = TCoin
 
 //if (priceHook < TCoin){
-totalCoin.innerHTML = 300
-
+console.log('totalCoin = '+TCoin)
 buttonHook.addEventListener('click',
     function levelHookUp(){
         if(upPriceHook < TCoin){
@@ -411,6 +412,7 @@ buttonHook.addEventListener('click',
         }   
     },
 )
+
 
 
 
