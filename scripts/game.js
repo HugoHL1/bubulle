@@ -137,25 +137,6 @@ rulesButton.addEventListener('click', function(){
     body.style.overflow = 'hidden'
 })
 
-
-
-//Add dynamite upgrade
-
-let dynNumberP = document.querySelector('#dynamiteNumber')
-let dynAdd = document.querySelector('#addDyn')
-let dynNum = 2
-
-dynAdd.addEventListener(
-        'click',
-        function upgradeDyn()
-        {
-            dynNum = dynNum + 3
-            dynNumberP.innerHTML = dynNum
-            console.log(dynNum)
-            saveStat()
-        }
-    )
-    
 // <<<<<<< HEAD
 // <<<<<<< HEAD
 // //GAME MECA/////////////////////////////
@@ -630,18 +611,14 @@ btnUpBoat.addEventListener(
     'click',
     function upgradeBoat()
     {
-        
-
         if(boatCoin < TCoin){
-            //ADD +1 SUR LEVEL!!!!!!!!
             if(upgradeB<2){
             upgradeB++
-            console.log(upgradeB)
+            //console.log(upgradeB)
             imgSub.src=tImages[upgradeB]
             imgBack.src=tImages[upgradeB-1]
             upgradeLevelBoat = upgradeLevelBoat + 1
             boatLevelP.innerHTML = upgradeLevelBoat 
-            //saveStat()
             TCoin = TCoin - boatCoin
             boatCoin = boatCoin + 5000
             priceBoat.innerHTML = boatCoin
@@ -651,7 +628,30 @@ btnUpBoat.addEventListener(
     }
 )
 
+//Add dynamite upgrade
 
+let dynNumberP = document.querySelector('#dynamiteNumber')
+let dynAdd = document.querySelector('#addDyn')
+let dynNum = 2
+let dynPrice = 1000
+
+dynAdd.addEventListener(
+        'click',
+        function upgradeDyn()
+        {
+            if(dynPrice < TCoin){
+                dynNum = dynNum + 3
+                dynNumberP.innerHTML = dynNum
+                //console.log(dynNum)
+                TCoin = TCoin - dynPrice
+                totalCoin.innerHTML = TCoin
+            }
+            else{
+                console.log('Vous navez pas assez')
+            }
+        }
+    )
+    
 
 // >>>>>>> f4856b0f7439bca89d6fa861530f22e5edaa14e3
 
