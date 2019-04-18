@@ -66,12 +66,12 @@ const playBtn = document.querySelector(".submit")
 const form = document.querySelector('form')
 let inputUsername = document.querySelector(".nick")
 
-playBtn.addEventListener(
-    'click',
-    function(){
-        localStorage.setItem('localUsername', inputUsername.value )
-    }
-)
+// playBtn.addEventListener(
+//     'click',
+//     function(){
+//         localStorage.setItem('localUsername', inputUsername.value )
+//     }
+// )
 
 //function test(){
   //  if(localStorage.getItem('localUsername') != null)
