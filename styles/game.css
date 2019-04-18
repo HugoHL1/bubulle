@@ -648,8 +648,8 @@ BODY
 .twofirstimg img{
     margin-top: 80%;
     margin: 5px 20px;
-    width: 252px;
-    height: 254px;
+    width: 15.75rem;
+    height: 15.875rem;
     z-index: 10;
     
     
@@ -670,7 +670,7 @@ BODY
 .display3{
     z-index: 2;
     margin-left: 15%;
-    margin-top: 8%;
+    margin-top: 1%;
 }
 
 #stopturtle{
