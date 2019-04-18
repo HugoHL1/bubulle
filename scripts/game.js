@@ -166,6 +166,24 @@ btnUpBoat.addEventListener(
         }
     }
 )
+
+//Add dynamite upgrade
+
+let dynNumberP = document.querySelector('#dynamiteNumber')
+let dynAdd = document.querySelector('#addDyn')
+let dynNum = 2
+
+dynAdd.addEventListener(
+        'click',
+        function upgradeDyn()
+        {
+            dynNum = dynNum + 3
+            dynNumberP.innerHTML = dynNum
+            console.log(dynNum)
+            saveStat()
+        }
+    )
+    
 // <<<<<<< HEAD
 // <<<<<<< HEAD
 // //GAME MECA/////////////////////////////
