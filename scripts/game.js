@@ -395,16 +395,20 @@ let upLevelHook = 1
 buttonHook.style.transform = 'translateY(130%)'
 
 //if (priceHook < TCoin){
-console.log('totalCoin = '+TCoin)
+totalCoin.innerHTML = 300
+
 buttonHook.addEventListener('click',
     function levelHookUp(){
-        upLevelHook = upLevelHook + 1
-        levelHook.innerHTML = upLevelHook
-        upPriceHook = upPriceHook + 150*1.2
-        priceHook.innerHTML = upPriceHook
-        numberFishPossible.innerHTML = upLevelHook
-        console.log ('jeej '+upLevelHook)
-        // return upLevelHook
+        if(upPriceHook < TCoin){
+            upLevelHook = upLevelHook + 1
+            levelHook.innerHTML = upLevelHook
+            TCoin = TCoin - upPriceHook
+            upPriceHook = upPriceHook + 150*1.2
+            priceHook.innerHTML = upPriceHook
+            numberFishPossible.innerHTML = upLevelHook
+            totalCoin.innerHTML = TCoin
+            // return upLevelHook
+        }   
     },
 )
 
