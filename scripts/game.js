@@ -117,6 +117,7 @@ const gameRules = document.querySelector('.gameRules')
 const startButton = document.querySelector('.buttonStart')
 const buttonStartContainer = document.querySelector('.buttonStartContainer')
 const body = document.querySelector('body')
+const numberFish = document.querySelector('.numberFish')
 
 closeCrossButton.addEventListener('click', function(){
     gameRules.style.display = 'none'
@@ -125,6 +126,7 @@ closeCrossButton.addEventListener('click', function(){
     buttonStartContainer.style.transform = 'translateY(350%)'
     startButton.style.display = 'block'
     body.style.overflow = 'scroll'
+    numberFish.style.visibility = 'visible'
 })
 
 // Open rules
@@ -513,6 +515,7 @@ const fishClicked = []
 let coin, totalCoin = document.querySelector('.totalCoin'), TCoin = 0
 const numberFishCaught = document.querySelector('#numberFishCaught')
 const numberFishPossible = document.querySelector('#numberFishPossible')
+
 // Button Hook 
 const buttonHook = document.querySelector('.buttonHook')
 const priceHook = document.querySelector('#price')
@@ -520,6 +523,8 @@ const levelHook = document.querySelector('#levelHook')
 
 let upPriceHook = 100
 let upLevelHook = 1
+
+buttonHook.style.transform = 'translateY(130%)'
 
 //if (priceHook < TCoin){
 console.log('totalCoin = '+TCoin)
@@ -533,7 +538,8 @@ buttonHook.addEventListener('click',
         console.log ('jeej '+upLevelHook)
         // return upLevelHook
     },
-) 
+)
+
 
 
 // console.log ('non '+upLevelHook)
