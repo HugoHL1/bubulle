@@ -175,7 +175,7 @@ function startGame(){
         new fish('fish', 'type1', 20, 20, 'left', 3),
         new fish('fish', 'type1', 15, 20, 'left', 3),
         new fish('fish', 'type1', 14, 20, 'left', 3),
-        new fish('fish', 'type2', 10, 25, 'left', 4),
+        new fish('fish', 'type2', 10, -100, 'left', 4),
         new fish('fish', 'type2', 8, 25, 'left', 4),
         new fish('fish', 'type2', 14, 25, 'left', 4),
         new fish('fish', 'type2', 11, 30, 'right', 5),
@@ -417,7 +417,6 @@ rulesButton.addEventListener('click', function(){
 // }
 
 // Start the game 
-const buttonStart = document.querySelector('.buttonStart')
 
 
 /*
