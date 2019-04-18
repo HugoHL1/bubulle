@@ -81,6 +81,7 @@ soundsButton.addEventListener(
 
 //Music
 const $music = document.querySelector('.musicAudio')
+const closeCrossButton = document.querySelector('#closeCross')
 let isMusicOn = false
 
 closeCrossButton.addEventListener(
@@ -111,6 +112,16 @@ musicButton.addEventListener(
     }
 )
 
+// Close Rules
+const gameRules = document.querySelector('.gameRules')
+const startButton = document.querySelector('.buttonStart')
+const body = document.querySelector('body')
+
+closeCrossButton.addEventListener('click', function(){
+    gameRules.style.display = 'none'
+    startButton.style.display = 'block'
+    body.style.overflow = 'scroll'
+})
 
 // <<<<<<< HEAD
 // <<<<<<< HEAD
@@ -549,10 +560,3 @@ window.addEventListener('keydown', function (event){
     }
 })
 
-const gameRules = document.querySelector('.gameRules')
-const closeCrossButton = document.querySelector('#closeCross')
-
-
-closeCrossButton.addEventListener('click', function(){
-    gameRules.style.display = 'none'
-})

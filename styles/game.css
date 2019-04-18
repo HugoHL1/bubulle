@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
     font-size: 62,5%;
     color: #444;
+    overflow: hidden;
 }
 
 .container{
@@ -366,6 +367,14 @@ BODY
     justify-content: center;
     margin: 10% auto;
     cursor: pointer;
+    display: none;
+    box-shadow:10px 10px 10px #A16E6E;
+}
+
+.buttonStart p{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 /* anime */
@@ -542,9 +551,9 @@ BODY
 
 .gameRules{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.700);   
+    background-color: rgba(255, 255, 255, 0.651);
     display: block;
-    z-index: 2;
+    z-index: 100;
 }
 #text{
     padding-left: 40%; 
