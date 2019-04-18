@@ -248,6 +248,24 @@ for(let o = 0; o< fishType100.length ; o++){
 //     } 
 // }
 
+// Start the game 
+const buttonStart = document.querySelector('.buttonStart')
+
+
+/*
+function scrollAuto(){
+    window.scrollBy(0,1)
+    setTimeout('scrollAuto()',1);   
+}
+
+buttonStart.addEventListener(
+    'click',
+    
+    scrollAuto()
+)
+*/
+
+
 class fish {
     constructor(id, type, speed, price, direction, data)
     {
