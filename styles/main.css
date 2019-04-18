@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family:  'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     /*background: #9fe5ff;*/
 }
 
-.container{
+.container {
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -15,11 +15,11 @@ body{
     background-repeat: no-repeat;*/
 }
 
-.firstContainer{
+.firstContainer {
     height: 60%;
 }
 
-.box{
+.box {
     width: 300px;
     height: auto;
     padding: 40px;
@@ -31,11 +31,11 @@ body{
     position: relative;
 }
 
-h1{
+h1 {
     color: #707070;
 }
 
-.btn{
+.btn {
     background: none;
     display: block;
     margin: 20px auto;
@@ -47,29 +47,30 @@ h1{
     outline: none;
 }
 
-.submit{
+.submit {
     background: #C1DEB6;
     text-transform: uppercase;
     color: #FAFAFA;
     font-size: 1em;
 }
-.submit:hover{
+
+.submit:hover {
     transition: 0.25s;
     background: #27ae60;
     cursor: pointer;
     border: 1px solid #27ae60;
 }
 
-.nick{
+.nick {
     font-size: 0.8em;
 }
 
-.nick:focus{
+.nick:focus {
     transition: 0.25s;
     width: 70%;
 }
 
-.social{
+.social {
     padding: 15px;
     background: #eb8e8e;
     border-radius: 3px;
@@ -79,72 +80,72 @@ h1{
     top: 25%;
 }
 
-.btn-social{
+.btn-social {
     cursor: pointer;
 }
 
-.btn-social img{
+.btn-social img {
     padding: 7px 0px;
     width: 20px;
 }
 
-.secondContainer{
+.secondContainer {
     width: 100%;
     margin: 5% auto;
     /*background: #9fe5ff;*/
     height: 400px;
 }
 
-.storyTelling{
+.storyTelling {
     padding: 40px;
     color: #FFF;
 }
 
-h1.title2{
+h1.title2 {
     text-align: center;
     color: #FFF;
 }
 
-.story{
+.story {
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
-    padding:  20px 40px;
+    padding: 20px 40px;
 }
 
-.thirdContainer{
+.thirdContainer {
     width: 100%;
     margin: 5% auto;
     /*background: #9fe5ff;*/
     height: 275px;
 }
 
-.fonctionnality{
+.fonctionnality {
     padding: 40px;
     text-align: center;
 }
 
-.fullOpa{
+.fullOpa {
     color: black;
     opacity: 1;
     transition: all 1s;
 }
 
-.noOpa{
+.noOpa {
     opacity: 0;
 }
 
-.title3{
+.title3 {
     color: #FFF;
 }
 
-.howPlayP{
+.howPlayP {
     color: #FFF;
     font-size: 30px;
     padding: 7%;
 }
 
-footer{
+footer {
     height: 100px;
     position: absolute;
     top: 216%;
@@ -153,30 +154,31 @@ footer{
     display: flex;
     justify-content: center;
 }
-.footContainer{
+
+.footContainer {
     display: flex;
     align-items: center;
 }
 
-.footA{
+.footA {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.footA a{
+.footA a {
     text-decoration: none;
     color: #FFF;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.footSocial{
+.footSocial {
     display: flex;
     align-items: center;
 }
 
-.footSocial img{
+.footSocial img {
     width: 20px;
     margin: 0 30px;
 }
@@ -185,72 +187,73 @@ footer{
 /*BACROUND*/
 
 #island {
-    position : absolute;
-    width : 700px;
-    top : 100px;
-    z-index : -10;
+    position: absolute;
+    width: 700px;
+    top: 100px;
+    z-index: -10;
 }
 
-#path1{
-    position : absolute; 
-    top : 710px;
-    height : 581px;
-    z-index : 1;
-    width: 100%;
-}
-
-#path2{
-    position : absolute; 
-    top : 697px;
-    width : 100%;
-}
-
-.gradient{
-    position : absolute;
-    background-image : linear-gradient(#AEE4FF, #071635);
-    height : 80%;
-    width : 100%;
-    top : 1291px;
-}
-
-.graduation {
-    display: flex;
-    width : 50px;
-    height : 10px;
-    background-color: white; 
-    position : absolute; 
-    border-radius: 5px;
-    z-index : 2;
-    left : -10px;
-}
-
-#g1{
-    top : 750px
-}
-#g2{
-    top : 1500px;
-}
-
-
-.graduation p{
-    color: white; 
-    position : absolute;
-    left : 60px;
-    top : -20px;
-}
-
-#fisherMan{
-    width : 400px;
-    position : absolute; 
-    top : 445px;
-    left : 70%;
-}
-
-.background{
+#path1 {
+    position: absolute;
+    top: 710px;
+    height: 581px;
     z-index: 1;
     width: 100%;
 }
 
-.container{
+#path2 {
+    position: absolute;
+    top: 697px;
+    width: 100%;
+}
+
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(#AEE4FF, #071635);
+    height: 75%;
+    width: 100%;
+    top: 1291px;
+}
+
+.graduation {
+    display: flex;
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    left: -10px;
+}
+
+#g1 {
+    top: 750px
+}
+
+#g2 {
+    top: 1500px;
+}
+
+
+.graduation p {
+    color: white;
+    position: absolute;
+    left: 60px;
+    top: -20px;
+}
+
+#fisherMan {
+    width: 400px;
+    position: absolute;
+    top: 445px;
+    left: 70%;
+}
+
+.background {
+    z-index: 1;
+    width: 100%;
+}
+
+.container {
     z-index: 10;
 }
