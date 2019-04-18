@@ -511,27 +511,59 @@ let fishs =
 const fishArray = document.querySelectorAll('.fish')
 const fishClicked = []
 let coin, totalCoin = document.querySelector('.totalCoin'), TCoin = 0
+const numberFishCaught = document.querySelector('#numberFishCaught')
+const numberFishPossible = document.querySelector('#numberFishPossible')
+// Button Hook 
+const buttonHook = document.querySelector('.buttonHook')
+const priceHook = document.querySelector('#price')
+const levelHook = document.querySelector('#levelHook')
+
+let upPriceHook = 100
+let upLevelHook = 1
+
+//if (priceHook < TCoin){
+console.log('totalCoin = '+TCoin)
+buttonHook.addEventListener('click',
+    function levelHookUp(){
+        upLevelHook = upLevelHook + 1
+        levelHook.innerHTML = upLevelHook
+        upPriceHook = upPriceHook + 150*1.2
+        priceHook.innerHTML = upPriceHook
+        numberFishPossible.innerHTML = upLevelHook
+        console.log ('jeej '+upLevelHook)
+        // return upLevelHook
+    },
+) 
+
+
+// console.log ('non '+upLevelHook)
 
 fishArray.forEach(function(element, index)
 {
     element.addEventListener('mousedown', (_event) => {
-        if(!fishClicked.includes(element)) {
-            fishClicked.push(element)
-            element.classList.remove('water')
-            
-            Coin = fishs[element.getAttribute('data-position')].price
-            TCoin = TCoin + Coin
-            totalCoin.innerHTML = TCoin
-        }
-        else {
-            console.log('fish in array')
-        }
-        fishFollow(_event.clientX, _event.clientY, element)
-        document.addEventListener('mousemove', _event => {
+        if (fishClicked.length < upLevelHook){
+            if(!fishClicked.includes(element)) {
+                fishClicked.push(element)
+                element.classList.remove('water')
+                
+                Coin = fishs[element.getAttribute('data-position')].price
+                TCoin = TCoin + Coin
+                totalCoin.innerHTML = TCoin
+                
+            }
+            else {
+                console.log('fish in array')
+            }
             fishFollow(_event.clientX, _event.clientY, element)
-        })
+            document.addEventListener('mousemove', _event => {
+                fishFollow(_event.clientX, _event.clientY, element)
+            })
+            numberFishCaught.innerHTML = fishClicked.length
+        }
     })
 })
+
+
 
 
 
@@ -545,7 +577,7 @@ function fishFollow(clientX, clientY, element) {
     element.style.left = fishX + "px"
     element.style.top = fishY + "px"
 
-    console.log('test');
+    //console.log('test');
     
 }
 
