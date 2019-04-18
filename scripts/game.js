@@ -538,12 +538,8 @@ dynAdd.addEventListener(
             if(dynPrice < TCoin){
                 dynNum = dynNum + 3
                 dynNumberP.innerHTML = dynNum
-                //console.log(dynNum)
                 TCoin = TCoin - dynPrice
                 totalCoin.innerHTML = TCoin
-            }
-            else{
-                console.log('Vous navez pas assez')
             }
         }
     )
@@ -566,9 +562,11 @@ dynAdd.addEventListener(
 // Dynamite activation
 const explosionUse = document.querySelector('.explosionSoundUse')
 window.addEventListener('keydown', function (eventExplosion){
-    if(eventExplosion.key == "d"){
+    if((eventExplosion.key == "d") && (dynNum > 0)){
         // Name of the function dynamite
         explosionUse.play()
+        dynNum = dynNum - 1
+        dynNumberP.innerHTML = dynNum
     }
 })
 
