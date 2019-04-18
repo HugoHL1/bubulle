@@ -115,12 +115,23 @@ musicButton.addEventListener(
 // Close Rules
 const gameRules = document.querySelector('.gameRules')
 const startButton = document.querySelector('.buttonStart')
+const buttonStartContainer = document.querySelector('.buttonStartContainer')
 const body = document.querySelector('body')
 
 closeCrossButton.addEventListener('click', function(){
     gameRules.style.display = 'none'
+    buttonStartContainer.style.display = 'flex'
+    buttonStartContainer.style.justifyContent = 'center'
+    buttonStartContainer.style.transform = 'translateY(350%)'
     startButton.style.display = 'block'
     body.style.overflow = 'scroll'
+})
+
+// Open rules
+const rulesButton = document.querySelector('.rules')
+
+rulesButton.addEventListener('click', function(){
+    gameRules.style.display = 'block'
 })
 
 // <<<<<<< HEAD
