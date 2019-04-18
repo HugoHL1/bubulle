@@ -176,19 +176,16 @@ function startGame(){
         new fish('fish', 'type1', 15, 20, 'left', 3),
         new fish('fish', 'type1', 14, 20, 'left', 3),
         new fish('fish', 'type2', 10, -100, 'left', 4),
-<<<<<<< HEAD
         new fish('fish', 'type2', 8, -100, 'left', 4),
         new fish('fish', 'type2', 14, -100, 'left', 4),
-=======
         new fish('fish', 'type2', 8, 25, 'left', 4),
         new fish('fish', 'type2', 14, 25, 'left', 4),
->>>>>>> 821d6fa76f4685ebbb7dfeeda0bd0c4c8d37a2be
         new fish('fish', 'type2', 11, 30, 'right', 5),
         new fish('fish', 'type2', 13, 30, 'right', 5),
         new fish('fish', 'type2', 9, 30, 'right', 5),
         new fish('fish', 'type2', 12, 30, 'right', 5),
-        new fish('fish', 'type100', 13, 40, 'right', 6),
-        new fish('fish', 'type100', 10, 40, 'right', 6),
+        new fish('fish', 'type100', 13, -40, 'right', 6),
+        new fish('fish', 'type100', 10, -40, 'right', 6),
         new fish('fish', 'type100', 15, -40, 'right', 6),
         new fish('fish', 'type3', 15, -100, 'right', 7),
         new fish('fish', 'type3', 12, -100, 'right', 7),
